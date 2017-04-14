@@ -1,8 +1,25 @@
-@import "partials/mixins";
-@import "partials/variables";
+@import "partials/mixins"; //sets properties of elements
+@import "partials/variables"; //all the variables are stored here
+@import "partials/functions"; //return a value
 
 body {
   margin: 0;
   font-family: sans-serif;
-  @include dank(blue);
+}
+
+.header {
+  background-color: #212121;
+  height: $header-height;
+}
+
+.headerText {
+  color: white;
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+  line-height: $header-height;
+}
+
+img {
+  width: 100%;
 }
