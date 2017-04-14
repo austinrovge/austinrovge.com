@@ -2,13 +2,12 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './js/app.js'
+        main: './app/components/app.js'
     },
     output: {
-        filename: './js/bundle.js'
+        filename: './app/components/bundle.js'
     },
-    watch: true,
-    devtool: 'source-map',
+    watch: false,
     module: {
         loaders: [
             {
@@ -27,7 +26,7 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: './css/main.css',
+            filename: './app/css/style.css',
             allChunks: true
         })
     ]
