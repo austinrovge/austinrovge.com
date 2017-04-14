@@ -1,7 +1,5 @@
 .idea
 node_modules
 *.log
-css/main.css
-css/main.css.map
-js/bundle.js
-js/bundle.js.map
+app/css/style.css
+app/components/bundle.js
