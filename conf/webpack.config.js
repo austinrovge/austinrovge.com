@@ -2,10 +2,10 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './app/js/index.js'
+        main: './src/js/index.js'
     },
     output: {
-        filename: './app/js/app.js'
+        filename: './src/js/app.js'
     },
     watch: false,
     module: {
@@ -26,7 +26,7 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: './app/css/style.css',
+            filename: './src/css/style.css',
             allChunks: true
         })
     ]

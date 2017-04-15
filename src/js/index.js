@@ -7,12 +7,12 @@ class Main extends Component { //or React.Component
     render () {
         return (
             <div>
-                <Header content="hello welcome to my site" />
+                <Header />
                 <img src="http://wallpapercave.com/wp/xTkHBfj.jpg" />
-                <Header content="goodbye" />
+                <Header />
             </div>
         );
     }
 }
 
-render(<Main />, document.getElementById('app'));
+render(<Main />, document.getElementById('app')); //or ReactDOM.render

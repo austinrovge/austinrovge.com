@@ -1,5 +1,5 @@
 .idea
 node_modules
 *.log
-app/css/style.css
-app/js/app.js
+src/css/style.css
+src/js/app.js
