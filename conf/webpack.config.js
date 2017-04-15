@@ -2,10 +2,10 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './app/components/app.js'
+        main: './app/components/index.js'
     },
     output: {
-        filename: './app/components/bundle.js'
+        filename: './app/components/app.js'
     },
     watch: false,
     module: {
