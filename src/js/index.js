@@ -8,7 +8,7 @@ class Main extends Component { //or React.Component
         return (
             <div>
                 <Header />
-                <img src="http://wallpapercave.com/wp/xTkHBfj.jpg" />
+                <img src="./assets/space.jpg" />
                 <Header />
             </div>
         );
