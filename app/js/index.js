@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Header from './header.js'
+import React, { Component } from 'react'; //destructed for line 6
+import ReactDOM, { render } from 'react-dom';
+import Header from './components/header.js'
 import '../css/main.scss'; //required to have sass compile
 
-class Main extends React.Component {
+class Main extends Component { //or React.Component
     render () {
         return (
             <div>
@@ -15,4 +15,4 @@ class Main extends React.Component {
     }
 }
 
-ReactDOM.render(<Main />, document.getElementById('app'));
+render(<Main />, document.getElementById('app'));

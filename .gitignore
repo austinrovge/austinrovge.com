@@ -2,4 +2,4 @@
 node_modules
 *.log
 app/css/style.css
-app/components/app.js
+app/js/app.js
