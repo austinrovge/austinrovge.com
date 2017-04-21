@@ -10,6 +10,19 @@ body {
 .header {
   background-color: #212121;
   height: $header-height;
+
+  .button {
+    color: #212121;
+    padding: 10px;
+    transition-duration: 0.2s;
+    background-color: white;
+    display: inline-block;
+
+    &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
 }
 
 .headerText {

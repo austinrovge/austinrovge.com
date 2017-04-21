@@ -1,4 +1,5 @@
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let webpack = require('webpack');
 
 module.exports = {
     entry: {
@@ -7,7 +8,6 @@ module.exports = {
     output: {
         filename: './src/js/app.js'
     },
-    watch: false,
     module: {
         loaders: [
             {
@@ -28,6 +28,12 @@ module.exports = {
         new ExtractTextPlugin({
             filename: './src/css/style.css',
             allChunks: true
-        })
+        }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify('production')
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin()
     ]
 };
