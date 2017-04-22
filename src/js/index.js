@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Link, Route, browserHistory } from 'react-rout
 import Space from './components/Space';
 import '../css/main.scss'; //required to have sass compile
 
+
+//todo change paths to work on server and not just on this computer
 class Main extends Component { //or React.Component
     render () {
         return (
