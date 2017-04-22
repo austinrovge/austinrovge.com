@@ -1,5 +1,5 @@
 # austinrovge.com
-This is a redesign of my personal site that serves as a way to learn ReactJS.
+This is a redesign of my personal site that serves as a way for me to learn ReactJS.
 
 SASS and ReactJS must be compiled before the webpage can be accessed.  
 The NGINX config for react-router to work must be moved and symbolically linked.
@@ -13,7 +13,7 @@ The SASS and ReactJS code must be compiled as browsers can't read it.
 `npm install`  
 `npm run build`  
 
-### Moving the conf file to /etc/nginx/sites-available/  
+### Moving the config file
 In order for the react-router dependency to work, NGINX must be configured to redirect any unknown requests back to the index.html file for react to handle the path.  
 
 `mv conf/website.conf /etc/nginx/sites-available`  
