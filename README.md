@@ -2,7 +2,7 @@
 This is a redesign of my personal site that serves as a way to learn ReactJS.
 
 SASS and ReactJS must be compiled before the webpage can be accessed.  
-The NGINX config for react-router to work must be moved and linked.
+The NGINX config for react-router to work must be moved and symbolically linked.
 
 # Installation
 ### Downloading and compiling the code:  
