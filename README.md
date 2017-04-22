@@ -18,5 +18,5 @@ In order for the react-router dependency to work, NGINX must be configured to re
 
 `mv conf/website.conf /etc/nginx/sites-available`  
 `ln -s /etc/nginx/sites-available/website /etc/nginx/sites-enabled/website`  
-`nginx -t`
+`nginx -t`  
 `service nginx restart`
