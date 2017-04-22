@@ -17,6 +17,6 @@ The SASS and ReactJS code must be compiled as browsers can't read it.
 In order for the react-router dependency to work, NGINX must be configured to redirect any unknown requests back to the index.html file for react to handle the path.  
 
 `mv conf/website.conf /etc/nginx/sites-available`  
-`ln -s /etc/nginx/sites-available/website /etc/nginx/sites-enabled/website`  
+`ln -s /etc/nginx/sites-available/website.conf /etc/nginx/sites-enabled/website.conf`  
 `nginx -t`  
 `service nginx restart`
