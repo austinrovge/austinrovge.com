@@ -13,6 +13,7 @@
     "es6-promise": "^4.1.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "http": "^0.0.0",
+    "http-server": "^0.10.0",
     "node": "0.0.0",
     "node-sass": "^4.5.2",
     "react": "^15.5.3",
@@ -27,8 +28,7 @@
   "scripts": {
     "babel": "babel",
     "build": "./node_modules/.bin/webpack --config conf/webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "local": "./node_modules/.bin/http-server  ./src"
   },
   "author": "Austin Rovge",
   "license": "ISC"
