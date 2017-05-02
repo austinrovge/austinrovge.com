@@ -9,17 +9,10 @@ class Main extends Component {
     render () {
         return (
             <Router history={browserHistory}>
-                <div>
-                    <Header />
-                    <Link to="./space">
-                        <button>go to space!</button>
-                    </Link>
-                    <Route path="/space" component={Space} />
-                    <Route exact={true} path="/" render={() => (
-                        <h1>hey and whats up</h1>
-                    )} />
-
-                </div>
+                <Route path="/" exact={true} render{() => (
+                    <h1>Hey guys, this is my home page</h1>
+                )} />
+                
             </Router>
         );
     }
