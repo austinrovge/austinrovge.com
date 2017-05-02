@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ReactDOM, { render } from 'react-dom';
+import ReactDOM, { render } from 'react-dom'; //destructured
 import Header from './components/Header/header';
 import { BrowserRouter as Router, Link, Route, browserHistory } from 'react-router-dom';
 import Space from './components/Space';
-import '../css/main.scss';
+import '../css/main.scss'; //sass
 
 class Main extends Component {
     render () {
