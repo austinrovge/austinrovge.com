@@ -1,13 +1,11 @@
-import React, { Component } from 'react'; //destructed for line 6
+import React, { Component } from 'react';
 import ReactDOM, { render } from 'react-dom';
 import Header from './components/Header/header';
 import { BrowserRouter as Router, Link, Route, browserHistory } from 'react-router-dom';
 import Space from './components/Space';
-import '../css/main.scss'; //required to have sass compile
+import '../css/main.scss';
 
-
-//todo change paths to work on server and not just on this computer
-class Main extends Component { //or React.Component
+class Main extends Component {
     render () {
         return (
             <Router history={browserHistory}>
@@ -27,4 +25,4 @@ class Main extends Component { //or React.Component
     }
 }
 
-render(<Main />, document.getElementById('app')); //or ReactDOM.render
+render(<Main />, document.getElementById('app'));

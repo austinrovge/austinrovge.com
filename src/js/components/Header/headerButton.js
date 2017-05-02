@@ -8,4 +8,4 @@ export default class HeaderButton extends Component{
     }
 }
 
-export { HeaderButton as HeaderButton }
+export { HeaderButton }
