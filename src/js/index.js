@@ -16,8 +16,8 @@ class Main extends Component { //or React.Component
                     <Link to="./space">
                         <button>go to space!</button>
                     </Link>
-                    <Route path="file:///Users/austinrovge/WebstormProjects/website/src/space" component={Space} />
-                    <Route exact={true} path="file:///Users/austinrovge/WebstormProjects/website/src/index.html" render={() => (
+                    <Route path="/space" component={Space} />
+                    <Route exact={true} path="/" render={() => (
                         <h1>hey and whats up</h1>
                     )} />
 
