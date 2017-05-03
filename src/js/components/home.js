@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Home extends Component {
+class Home extends Component {
     render () {
         return (
             <div className="content">hello welcome to my site. my site says hello.</div>
@@ -8,4 +8,4 @@ export default class Home extends Component {
     }
 }
 
-export { Home }
+export default Home
