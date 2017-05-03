@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Contact extends Component {
     render () {
         return (
-            <div>hello contact me here i love people!!</div>
+            <div className="content">please contact me my mom says i <strong>need</strong> friends. please.</div>
         );
     }
 }

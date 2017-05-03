@@ -1,5 +1,5 @@
-@import "partials/mixins"; //sets properties of elements
 @import "partials/variables"; //all the variables are stored here
+@import "partials/mixins";    //sets properties of elements
 @import "partials/functions"; //return a value
 
 * {
@@ -11,10 +11,7 @@
 .header {
   background-color: #212121;
   height: $header-height;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include centerVertically();
 
   .text {
     color: white;
@@ -30,7 +27,12 @@
       text-decoration: none;
     }
   }
-
 }
 
-//todo design for other display sizes
+.content {
+  margin: 10px 0 0 10px;
+  font-size: 24px;
+  color: #212121;
+}
+
+//todo: design for other display sizes
