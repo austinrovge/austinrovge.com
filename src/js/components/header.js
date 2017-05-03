@@ -15,6 +15,7 @@ export default class Header extends Component {
                 <h1 className="text">austinrovge</h1>
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
             </div>
         );
     }

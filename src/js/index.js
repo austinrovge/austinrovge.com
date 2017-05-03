@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom'; //destructured
+import { BrowserRouter as Router, Route, browserHistory } from 'react-router-dom';
 import Header from './components/header';
-import { BrowserRouter as Router, Link, Route, browserHistory } from 'react-router-dom';
 import Home from './components/home';
 import About from './components/about';
+import Contact from './components/contact';
 import '../css/main.scss'; //sass
 
-class Main extends Component {
+class App extends Component {
     render () {
         return (
             <Router history={browserHistory}>
@@ -14,10 +15,11 @@ class Main extends Component {
                     <Route path="/" component={Header}/>
                     <Route exact path="/" component={Home}/>
                     <Route path="/about" component={About}/>
+                    <Route path="/contact" component={Contact} />
                 </div>
             </Router>
         );
     }
 }
 
-render(<Main />, document.getElementById('app'));
+render(<App />, document.getElementById('app'));
