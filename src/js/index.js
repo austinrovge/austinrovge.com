@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom'; //destructured
-import Header from './components/Header/header';
+import Header from './components/header';
 import { BrowserRouter as Router, Link, Route, browserHistory } from 'react-router-dom';
 import Home from './components/home';
 import About from './components/about';
