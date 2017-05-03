@@ -2,37 +2,25 @@
 @import "partials/variables"; //all the variables are stored here
 @import "partials/functions"; //return a value
 
-body {
+* {
   margin: 0;
+  padding: 0;
   font-family: sans-serif;
 }
 
 .header {
   background-color: #212121;
   height: $header-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  .button {
-    color: #212121;
-    padding: 10px;
-    transition-duration: 0.2s;
-    background-color: white;
-    display: inline-block;
-
-    &:hover {
-      opacity: 0.5;
-      cursor: pointer;
-    }
+  .text {
+    color: white;
+    margin: 0;
   }
+
 }
 
-.headerText {
-  color: white;
-  font-size: 36px;
-  margin: 0;
-  text-align: center;
-  line-height: $header-height;
-}
-
-img {
-  width: 100%;
-}
+//todo design for other display sizes

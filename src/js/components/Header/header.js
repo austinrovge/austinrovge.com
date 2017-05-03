@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import HeaderButton from '../Header/headerButton';
 
 export default class Header extends Component {
@@ -11,9 +12,10 @@ export default class Header extends Component {
 
     render () {
         return (
-            <div className="col-12-md col-12-lg col-12-sm header">
-                <HeaderButton>Dank Memes</HeaderButton>
-                <h1 className="headerText">{this.state.content}</h1>
+            <div className="header 12-col-sm 12-col-md 12-col-lg">
+                <h1 className="text">austinrovge</h1>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
             </div>
         );
     }
