@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import HeaderButton from '../Header/headerButton';
 
 export default class Header extends Component {
     constructor(props) {

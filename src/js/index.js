@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { render } from 'react-dom'; //destructured
 import Header from './components/Header/header';
 import { BrowserRouter as Router, Link, Route, browserHistory } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
+import Home from './components/home';
+import About from './components/about';
 import '../css/main.scss'; //sass
 
 class Main extends Component {
