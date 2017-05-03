@@ -27,4 +27,8 @@ You can start a local test server for routing by typing in
 
 `npm run local`
 
-This will start an `http-server` so the webpage can be accessed from `localhost:8080`. This is primarily done to test routing, though it does not work on refreshes. There is probably a way to do this in React. TODO: FIND A WAY TO DO THIS IN REACT
+This will start an `http-server` so the webpage can be accessed from `localhost:8080`.
+
+This is primarily done to test routing, though it does not work on refreshes. There is probably a way to do this in React.
+
+TODO: FIND A WAY TO DO THIS IN REACT
