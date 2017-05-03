@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import ReactDOM, { render } from 'react-dom'; //destructured
+import { render } from 'react-dom'; //destructured
 import Header from './components/Header/header';
 import { BrowserRouter as Router, Link, Route, browserHistory } from 'react-router-dom';
-import Space from './components/Space';
+import Home from './components/Home';
+import About from './components/About';
 import '../css/main.scss'; //sass
 
 class Main extends Component {
     render () {
         return (
             <Router history={browserHistory}>
-                <Route path="/" exact={true} render{() => (
-                    <h1>Hey guys, this is my home page</h1>
-                )} />
-                
+                <div>
+                    <Route path="/" component={Header}/>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/about" component={About}/>
+                </div>
             </Router>
         );
     }
