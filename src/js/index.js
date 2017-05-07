@@ -5,6 +5,7 @@ import Header from './components/header';
 import Home from './components/home';
 import About from './components/about';
 import Contact from './components/contact';
+import Projects from './components/projects';
 import '../css/main.scss'; //sass
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/about" component={About}/>
                     <Route exact path="/contact" component={Contact} />
+                    <Route exact path="/projects" component={Projects} />
                 </div>
             </Router>
         );

@@ -1,8 +1,11 @@
-@mixin setColor($color) {
-  color: $color;
-} //example mixin
-
 @mixin centerVertically() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centerVerticallyHorizontally() {
   display: flex;
   flex-direction: column;
   justify-content: center;

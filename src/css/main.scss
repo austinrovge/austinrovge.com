@@ -35,6 +35,18 @@
   color: #212121;
   display: block;
 
+  .projects-div {
+    height: 50px;
+    @include centerVerticallyHorizontally();
+    background-color: #337ab7;
+    width: calc(20px + 100%);
+    margin: -10px;
+
+    &:hover {
+      background-color: darkslateblue;
+    }
+  }
+
   .parallax {
     width: calc(100% + 20px);
     margin: -10px;
