@@ -1,11 +1,4 @@
-@mixin centerVertically() {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin centerVerticallyHorizontally() {
+@mixin centerVH() {
   display: flex;
   flex-direction: column;
   justify-content: center;
