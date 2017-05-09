@@ -8,10 +8,14 @@
   font-family: sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 .header {
   background-color: #212121;
   height: $header-height;
-  @include centerVertically();
+  @include centerVH();
 
   .text {
     color: white;
@@ -36,14 +40,19 @@
   display: block;
 
   .projects-div {
-    height: 50px;
-    @include centerVerticallyHorizontally();
-    background-color: #337ab7;
+    @include centerVH();
+    height: 200px;
+    font-size: 18px;
+    color: white;
+    background-color: #2980b9;
     width: calc(20px + 100%);
     margin: -10px;
+    transition-duration: 0.2s;
+    text-decoration: none;
 
     &:hover {
-      background-color: darkslateblue;
+      background-color: #3498db;
+
     }
   }
 
