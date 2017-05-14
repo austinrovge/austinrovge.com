@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom'; //destructured
+import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, browserHistory } from 'react-router-dom';
 import Header from './components/header';
 import Home from './components/home';
