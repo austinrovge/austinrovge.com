@@ -12,11 +12,8 @@ class Header extends Component {
     render () {
         return (
             <div className="header 12-col-sm 12-col-md 12-col-lg">
-                <h1 className="text">austinrovge</h1>
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/"><h1>austinrovge</h1></Link>
+                <h6>developing innovative solutions never</h6>
             </div>
         );
     }

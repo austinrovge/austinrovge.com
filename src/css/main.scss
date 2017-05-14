@@ -14,20 +14,22 @@ body {
 
 .header {
   background-color: #212121;
+
   height: $header-height;
   @include centerVH();
 
-  .text {
-    color: white;
-    margin: 0 0 10px 0;
+  h6 {
+    color: #bdc3c7;
   }
 
   a {
-    color: #337ab7;
+    color: #ffffff;
     text-decoration: none;
+    margin: 0 0 10px 0;
+    transition-duration: 0.2s;
 
     &:hover {
-      color: white;
+      color: #337ab7;
       text-decoration: none;
     }
   }
@@ -39,20 +41,56 @@ body {
   color: #212121;
   display: block;
 
-  .projects-div {
+  .home-text {
+    h3 {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .about, .projects, .contact {
+
     @include centerVH();
     height: 200px;
     font-size: 18px;
     color: white;
-    background-color: #2980b9;
     width: calc(20px + 100%);
     margin: -10px;
     transition-duration: 0.2s;
     text-decoration: none;
 
+    .opacity-text {
+      opacity: 0;
+    }
+
+    &:hover {
+      .opacity-text {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  .about {
+    background-color: #c0392b;
+
+    &:hover {
+      background-color: #e74c3c;
+    }
+  }
+
+  .projects {
+    background-color: #2980b9;
+
     &:hover {
       background-color: #3498db;
+    }
+  }
 
+  .contact {
+    background-color: #27ae60;
+
+    &:hover {
+      background-color: #2ecc71;
     }
   }
 
