@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-class About extends Component {
-    render () {
+export default class About extends Component {
+    render() {
         return (
             <div className="content">
                 Hello I do web stuff because code on my robotics team is literally fascism and web isn't.<br/><br/>
@@ -11,5 +11,3 @@ class About extends Component {
         );
     }
 }
-
-export default About

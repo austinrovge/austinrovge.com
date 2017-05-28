@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Contact extends Component {
+export default class Contact extends Component {
     render () {
         return (
             <div className="content">please contact me my mom says i <strong>need</strong> friends. please.
@@ -20,5 +20,3 @@ class Contact extends Component {
 }
 
 //todo download social icons to be locally stored
-
-export default Contact

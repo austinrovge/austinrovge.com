@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-class Projects extends Component {
-
-
-    render () {
+export default class Projects extends Component {
+    render() {
         return (
             <div className="content">
                 {this.props.match.params.projectID ? this.props.true = 1 : this.props.true = 0}
@@ -13,5 +11,3 @@ class Projects extends Component {
         );
     }
 }
-
-export default Projects
