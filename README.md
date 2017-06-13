@@ -10,7 +10,7 @@ This is done so any unknown url can be redirected to `/` and React can take care
 The SASS and ReactJS code must be compiled as browsers can't read the raw code.  
 
 ``` bash
-$ yarn clone https://github.com/austinrovge/website.git
+$ git clone https://github.com/austinrovge/website.git
 $ cd website
 $ yarn install
 $ yarn run build
