@@ -9,23 +9,29 @@ This is done so any unknown url can be redirected to `/` and React can take care
 ### Downloading and compiling the code  
 The SASS and ReactJS code must be compiled as browsers can't read the raw code.  
 
-`npm clone https://github.com/austinrovge/website.git`  
-`cd website`  
-`npm install`  
-`npm run build`  
+``` bash
+$ yarn clone https://github.com/austinrovge/website.git
+$ cd website
+$ yarn install
+$ yarn run build
+```
 
 ### Moving the NGINX configuration file
 In order for react-router to work, NGINX must be configured to redirect any unknown url requests back to the index.html file for react to handle the path.  
 
-`mv conf/website.conf /etc/nginx/sites-available`  
-`ln -s /etc/nginx/sites-available/website.conf /etc/nginx/sites-enabled/website.conf`  
-`nginx -t`  
-`service nginx restart`
+``` bash
+$ mv conf/website.conf /etc/nginx/sites-available
+$ ln -s /etc/nginx/sites-available/website.conf /etc/nginx/sites-enabled/website.conf
+$ nginx -t
+$ service nginx restart
+```
 
 ### Starting a Local Server
 You can start a local test server for routing by typing in 
 
-`npm run local`
+``` bash
+$ yarn run local
+```
 
 This will start an `http-server` so the webpage can be accessed from `localhost:8080`.
 
