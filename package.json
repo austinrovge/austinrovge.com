@@ -28,7 +28,7 @@
   "scripts": {
     "babel": "babel",
     "build": "./node_modules/.bin/webpack --config conf/webpack.config.js",
-    "local": "./node_modules/.bin/http-server  ./src"
+    "local": "./node_modules/.bin/http-server ./src"
   },
   "author": "Austin Rovge",
   "license": "ISC"
