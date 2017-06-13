@@ -13,18 +13,19 @@ body {
 }
 
 .header {
-  height: auto;
+  height: $header-height;
+  background-color: #212121;
   @include centerVH();
 
   h6 {
-    color: #212121;
+    color: #ffffff;
   }
 
   a {
     text-decoration: none;
     margin: 0 0 10px 0;
     transition-duration: 0.2s;
-    color: #212121;
+    color: #ffffff;
 
     &:hover {
       color: #337ab7;
@@ -33,14 +34,6 @@ body {
   }
 }
 
-.home-img {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  padding: 0;
-  margin: 0;
-  top: 0;
-}
-
 //todo: windows scroll
 //todo: design for other display sizes
+//todo: font stored locally
