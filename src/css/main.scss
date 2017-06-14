@@ -10,12 +10,20 @@
 
 body {
   //overflow: hidden;
+  font-size: 16px;
 }
 
 .header {
   height: $header-height;
   background-color: #212121;
-  @include centerVH();
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .head-text {
+    margin-left: 20px;
+  }
 
   h6 {
     color: #ffffff;
@@ -26,11 +34,24 @@ body {
     margin: 0 0 10px 0;
     transition-duration: 0.2s;
     color: #ffffff;
+    font-size: 2em;
 
     &:hover {
       color: #337ab7;
       text-decoration: none;
     }
+  }
+}
+
+.content {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+
+  .home-img {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: -10px;
   }
 }
 
