@@ -17,8 +17,8 @@ export default class Header extends Component {
                     <h6>Milwaukee, Wisconsin</h6>
                     <h6>developing innovative solutions never</h6>
                 </div>
-                <Link to="/contact">contact</Link>
                 <Link to="/projects">projects</Link>
+                <Link to="/contact">contact</Link>
             </div>
         );
     }
