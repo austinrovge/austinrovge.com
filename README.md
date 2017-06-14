@@ -1,7 +1,7 @@
-# website
+# Website
 This is a redesign of my personal site that serves as a way for me to learn ReactJS.
 
-SASS and ReactJS must be compiled before the webpage can be accessed.  
+SASS and ReactJS must be compiled before the web page can be accessed.  
 The NGINX config for react-router to work must be moved and symbolically linked.  
 This is done so any unknown url can be redirected to `/` and React can take care of the routing, not the server.
 
@@ -26,15 +26,16 @@ $ nginx -t
 $ service nginx restart
 ```
 
+This would ideally be fixed by the time I am done with this site.
+
+# Testing
 ### Starting a Local Server
-You can start a local test server for routing by typing in 
+You can start a local test server to view development pages. This is done by using the following command.
 
 ``` bash
 $ yarn run local
 ```
 
-This will start an `http-server` so the webpage can be accessed from `localhost:8080`.
+This will start an `http-server` so the web page can be accessed from `localhost:8080`.
 
-This is primarily done to test routing, though it does not work on refreshes. There is probably a way to do this in React.
-
-TODO: FIND A WAY TO DO THIS IN REACT
+This is primarily done to test site layout, refreshing does not work.
