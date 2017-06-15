@@ -23,6 +23,7 @@ class App extends Component {
                     <Route path="/" component={Footer} />
 
                     {/*<Route exact path="*" component={NotFound} />*/}
+                    {/*this shit do not work */}
                 </div>
             </Router>
         );

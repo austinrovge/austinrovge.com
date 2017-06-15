@@ -15,14 +15,21 @@ body {
 
 .header {
   height: $header-height;
-  background-color: #212121;
+  //background-color: #212121;
+  background-color: rgba(52, 73, 94, 1);
 
   display: flex;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
 
   .head-text {
     margin-left: 20px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
   }
 
   h6 {
@@ -54,6 +61,17 @@ body {
     overflow: hidden;
     margin-right: -10px;
     margin-top: 10px;
+
+    &:hover {
+
+    }
+  }
+
+  .text-block {
+    display: block;
+    font-size: 1em;
+    padding: 0;
+    margin-bottom: 20px;
   }
 
   .text {
@@ -73,15 +91,12 @@ body {
     .shudder {
       font-style: italic;
     }
-
-    .app-dev-img {
-      width: 250px;
-    }
   }
 }
 
 .footer {
-  background-color: rgba(33, 33, 33, 0.75);
+  //background-color: rgba(52, 73, 94, 1);
+  background-color: #212121;
   height: 100px;
   bottom: 0;
   color: #ffffff;
