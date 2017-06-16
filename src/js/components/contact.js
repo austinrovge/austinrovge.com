@@ -12,7 +12,7 @@ export default class Contact extends Component {
                 <h1><strong>Other</strong></h1>
                 <ul>
                     <li><a target="_blank" href="https://github.com/austinrovge">Github</a></li>
-                    <li><a target="_blank" href="">Resume</a></li>
+                    <li><a target="_blank" href="/assets/resume.pdf">Resume</a></li>
                 </ul>
             </div>
         );
