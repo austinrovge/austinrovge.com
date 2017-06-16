@@ -13,6 +13,7 @@
 
 body, html {
   font-size: 16px;
+  color: #212121;
   height: 100%;
   min-height: 100%;
   margin: 0;
@@ -73,6 +74,23 @@ body, html {
     }
   }
 
+  ul {
+    li {
+      list-style: none;
+      font-size: 2em;
+      margin-left: 15px;
+      margin-bottom: 5px;
+
+      a {
+        transition-duration: 0.2s;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
   .text-block {
     display: block;
     font-size: 1em;
@@ -112,6 +130,18 @@ body, html {
   justify-content: space-around;
   align-items: center;
   left: 0;
+
+  .social-btn-div {
+    margin-top: 10px;
+    text-align: center;
+    fill: #ffffff;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      fill: #ffffff;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
