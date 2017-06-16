@@ -13,7 +13,7 @@ class App extends Component {
     render () {
         return (
             <Router history={browserHistory}>
-                <div>
+                <div classID="wrapper">
                     <Route path="/" component={Header} />
                     <Route exact path="/" component={Home} />
                     <Route exact path="/contact" component={Contact} />
