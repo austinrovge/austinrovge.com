@@ -26,6 +26,12 @@ body, html {
   position: relative;
 }
 
+[data-reactroot] {
+  height: 100% !important;
+  min-height: 100% !important;
+  position: absolute !important;
+}
+
 .header {
   height: $header-height;
   //background-color: #212121;
@@ -62,6 +68,8 @@ body, html {
 .content {
   padding: 0 0 $footer-height 0;
   margin: 0 15px 0 15px;
+  clear: none;
+  overflow-y: auto;
 
   .home-img {
     border-radius: 50%;
@@ -161,7 +169,7 @@ body, html {
   width: 100%;
   bottom: 0;
   color: #ffffff;
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
