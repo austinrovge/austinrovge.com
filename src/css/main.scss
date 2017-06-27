@@ -75,8 +75,9 @@ body, html {
   .home-img {
     border-radius: 50%;
     overflow: hidden;
-    margin-right: -10px;
-    margin-top: 10px;
+    margin-left: -15px;
+    margin-right: 10px;
+    margin-top: 20px;
 
     &:hover {
 
@@ -88,6 +89,7 @@ body, html {
     height: $project-div-height;
     background-color: #212121;
     margin: 0 -15px 0 -15px;
+
 
     .cover {
       opacity: 0;
@@ -200,15 +202,24 @@ body, html {
     align-items: center;
     justify-content: center;
 
-    a {
+    .links {
       margin: 0 0 10px 0;
       display: block;
+      text-align: center;
+    }
+
+    .head-text {
+      display: block;
+      text-align: center;
     }
   }
 
   .content {
     .home-img {
       width: calc(100% - 30px);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

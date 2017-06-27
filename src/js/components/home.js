@@ -4,6 +4,7 @@ export default class Home extends Component {
     render () {
         return (
                 <div className="content">
+                    <img className="home-img col-md-4" src="/assets/austin.jpg" />
                     <div className="text col-md-8">
                         <div className="text-block"><h1><strong>Hi, I'm Austin.</strong></h1></div>
                         <div className="text-block">I am used to doing web development but I am currently learning more about many different languages.</div>
@@ -20,7 +21,6 @@ export default class Home extends Component {
                             This site was originally built with just HTML and CSS on an apache server.<br /> I then upgraded to using Angular 1, and then Node came in to play somewhere along there.<br />
                             I now use React on an NGINX server (a raspberry pi) for rendering the site and all that.</div>
                     </div>
-                    <img className="home-img col-md-4" src="/assets/austin.jpg" />
                 </div>
         );
     }
