@@ -72,7 +72,7 @@ body, html {
   margin: 0 15px 0 15px;
   clear: none;
   overflow-y: auto;
-  width: 100%;
+  width: calc(100% - 30px);
 
   .home-img {
     border-radius: 50%;
