@@ -43,26 +43,25 @@ body, html {
   justify-content: space-around;
   text-align: center;
 
-  .head-text {
-    margin-left: 20px;
-    text-align: left;
+  .header-container {
+    display: block;
+    font-size: 1em;
+
+    a {
+      display: block;
+      color: #ffffff;
+      font-size: 1.5em;
+      transition-duration: 0.2s;
+
+      &:hover {
+        text-decoration: none;
+        color: #23527c;
+      }
+    }
   }
 
   h6 {
     color: #ffffff;
-  }
-
-  a {
-    text-decoration: none;
-    margin: 0 0 10px 0;
-    transition-duration: 0.2s;
-    color: #ffffff;
-    font-size: 2em;
-
-    &:hover {
-      color: #bdc3c7;
-      text-decoration: none;
-    }
   }
 }
 
@@ -186,19 +185,14 @@ body, html {
     align-items: center;
     justify-content: center;
     height: $small-header-height;
+    margin: 0 0 10px 0;
 
-    .links {
-      margin: 0 0 10px 0;
-      text-align: center;
+    .header-container {
+      display: block;
 
       a {
         display: block;
       }
-    }
-
-    .head-text {
-      display: block;
-      text-align: center;
     }
   }
 
