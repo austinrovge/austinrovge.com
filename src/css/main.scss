@@ -52,6 +52,7 @@ body, html {
       color: #ffffff;
       font-size: 1.5em;
       transition-duration: 0.2s;
+      margin-bottom: 5px;
 
       &:hover {
         text-decoration: none;
@@ -62,6 +63,7 @@ body, html {
 
   h6 {
     color: #ffffff;
+    font-style: italic;
   }
 }
 
