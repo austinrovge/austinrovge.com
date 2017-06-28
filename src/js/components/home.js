@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import Header from './header';
+import Footer from './footer';
 
 export default class Home extends Component {
     render () {
         return (
+            <div>
+                <Header />
                 <div className="content">
                     <img className="home-img col-md-4" src="/assets/austin.jpg" />
                     <div className="text col-md-8">
@@ -22,6 +26,8 @@ export default class Home extends Component {
                             I now use React on an NGINX server (a raspberry pi) for rendering the site and all that.</div>
                     </div>
                 </div>
+                <Footer />
+            </div>
         );
     }
 }

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Route, browserHistory } from 'react-router-dom';
-import Header from './components/header';
-import Footer from './components/footer';
+import { BrowserRouter as Router, Route, browserHistory, Switch } from 'react-router-dom';
 import Home from './components/home';
 import Contact from './components/contact';
 import Projects from './components/projects';
@@ -14,16 +12,12 @@ class App extends Component {
         return (
             <Router history={browserHistory}>
                 <div>
-                    <Route path="/" component={Header} />
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/contact" component={Contact} />
-                    <Route exact path="/projects" component={Projects}>
-                        <Route path="/projects/projectID" component={Projects} />
-                    </Route>
-                    <Route path="/" component={Footer} />
-
-                    {/*<Route exact path="*" component={NotFound} />*/}
-                    {/*this shit do not work */}
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/contact" component={Contact} />
+                        <Route exact path="/projects" component={Projects} />
+                        <Route exact path="*" component={NotFound} />
+                    </Switch>
                 </div>
             </Router>
         );
