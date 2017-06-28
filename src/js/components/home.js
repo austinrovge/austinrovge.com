@@ -21,7 +21,7 @@ export default class Home extends Component {
                                 Application Development department.</a></div>
                         <div className="text-block">After joining the App Dev department, I worked with others on our streaming service, <a target="_blank" href="https://atthecontrol.com/">At The Control</a>, which was used to be able to
                             remotely watch and keep up with robotics events.</div>
-                        <div className="text-block">Now I am a soon to be freshman (as of June 2017) at <a target="_blank" href="https://msoe.edu">MSOE</a> where I plan to get my bachelors in Software Engineering.<br /><br />
+                        <div className="text-block">Now I am a freshman (as of Fall 2017) at <a target="_blank" href="https://msoe.edu">MSOE</a> where I plan to get my bachelors in Software Engineering.<br /><br />
                             This site was originally built with just HTML and CSS on an apache server.<br /> I then upgraded to using Angular 1, and then Node came in to play somewhere along there.<br />
                             I now use React on an NGINX server (a raspberry pi) for rendering the site and all that.</div>
                     </div>
