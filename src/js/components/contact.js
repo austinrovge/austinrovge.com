@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Header from './header';
-import Footer from './footer';
+import Header from './base/header';
+import Footer from './base/footer';
 
 export default class Contact extends Component {
     render () {
         return (
             <div>
-                <Header />
+                <Header pathname={this.props.location.pathname} />
                 <div className="content">
                     <h1><strong>How to reach me</strong></h1>
                     <ul>
@@ -29,5 +29,3 @@ export default class Contact extends Component {
         );
     }
 }
-
-//todo download social icons to be locally stored

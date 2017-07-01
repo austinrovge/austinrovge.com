@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Header from './header';
-import Footer from './footer';
+import Header from './base/header';
+import Footer from './base/footer';
 
 export default class Home extends Component {
     render () {
         return (
             <div>
-                <Header />
+                <Header pathname={this.props.location.pathname} />
                 <div className="content">
                     <img className="home-img col-md-4" src="/assets/austin.jpg" />
                     <div className="text col-md-8">

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Header from './header';
-import Footer from './footer';
+import Header from './base/header';
+import Footer from './base/footer';
 
 export default class Projects extends Component {
-    render() {
+    render () {
         return (
             <div>
-                <Header />
+                <Header pathname={this.props.location.pathname} />
                 <div className="content">
                     <h1><strong>Here's stuff I've worked on</strong></h1>
                     <div className="project-div">

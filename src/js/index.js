@@ -13,9 +13,9 @@ class App extends Component {
             <Router history={browserHistory}>
                 <div>
                     <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/contact" component={Contact} />
-                        <Route exact path="/projects" component={Projects} />
+                        <Route exact path="/" render={(props) => <Home pathname={props.location.pathname} {...props} />} />
+                        <Route exact path="/contact" render={(props) => <Contact pathname={props.location.pathname} {...props} />} />
+                        <Route exact path="/projects" render={(props) => <Projects pathname={props.location.pathname} {...props} />} />
                         <Route exact path="*" component={NotFound} />
                     </Switch>
                 </div>
