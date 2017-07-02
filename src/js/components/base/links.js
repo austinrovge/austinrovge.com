@@ -20,9 +20,15 @@ export default class Links extends Component {
 
         return (
             <div>
-                {homeLink}
-                {projectLink}
-                {contactLink}
+                <div>
+                    {homeLink}
+                </div>
+                <div>
+                    {projectLink}
+                </div>
+                <div>
+                    {contactLink}
+                </div>
             </div>
         );
     }
