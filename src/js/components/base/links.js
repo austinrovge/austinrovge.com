@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default class Links extends Component {
     render () {
+        //todo: fix this garbage way of highlighting a link
         if (this.props.pathname === '/') {
             var homeLink = (<Link to="/"><h1 className="active-link"><strong>austinrovge</strong></h1></Link>);
             var projectLink = (<Link to="/projects">projects</Link>);
