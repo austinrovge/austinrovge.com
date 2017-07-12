@@ -29,7 +29,7 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack --config conf/webpack.config.js",
     "local": "./node_modules/.bin/http-server ./src",
-    "local-beta": "./node_modules/.bin/http-server ./src -o"
+    "local-beta-i-need-to-wait-for-them-to-fix-bugs": "./node_modules/.bin/http-server ./src -o"
   },
   "author": "Austin Rovge",
   "license": "MIT"
