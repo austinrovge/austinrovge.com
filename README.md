@@ -26,3 +26,4 @@ This starts a `nodejs` server which will serve the client with the index.html fi
 ### Future Development
 * ~~Either use a node server or continue with NGINX config for redirecting to the index.html file~~
 * Transitions
+* Implement redux in a way that is natural and not forced
