@@ -1,7 +1,16 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-const PORT = 8080;
+
+let PORT = 8080;
+
+if (process.env.NODE_ENV === 'prod') {
+    PORT = 80;
+} else if (process.env.NODE_ENV === 'dev') {
+    PORT = 8080;
+} else {
+    console.log('error: undefined NODE_ENV');
+}
 
 app.use(express.static(path.join(__dirname, 'src')));
 

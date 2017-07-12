@@ -24,7 +24,8 @@
   "devDependencies": {},
   "scripts": {
     "build": "./node_modules/.bin/webpack --config conf/webpack.config.js",
-    "start": "node server.js"
+    "start": "NODE_ENV=prod node server.js",
+    "local": "NODE_ENV=dev node server.js"
   },
   "author": "Austin Rovge",
   "license": "MIT"
