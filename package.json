@@ -11,7 +11,8 @@
     "es6-promise": "^4.1.0",
     "express": "^4.15.3",
     "extract-text-webpack-plugin": "^2.1.0",
-    "node": "^6.9.5",
+    "forever": "^0.15.3",
+    "node": "0.0.0",
     "node-sass": "^4.5.2",
     "react": "^15.5.3",
     "react-dom": "^15.5.3",
@@ -24,7 +25,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "./node_modules/.bin/webpack --config conf/webpack.config.js",
-    "start": "NODE_ENV=prod node server.js",
+    "start": "NODE_ENV=prod forever -m5 server.js",
     "local": "NODE_ENV=dev node server.js"
   },
   "author": "Austin Rovge",
