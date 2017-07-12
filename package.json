@@ -11,8 +11,7 @@
     "es6-promise": "^4.1.0",
     "express": "^4.15.3",
     "extract-text-webpack-plugin": "^2.1.0",
-    "http-server": "^0.10.0",
-    "node": "0.0.0",
+    "node": "^8.1.4",
     "node-sass": "^4.5.2",
     "react": "^15.5.3",
     "react-dom": "^15.5.3",
@@ -25,9 +24,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "./node_modules/.bin/webpack --config conf/webpack.config.js",
-    "local": "./node_modules/.bin/http-server ./src",
-    "start": "node server.js",
-    "local-beta-i-need-to-wait-for-them-to-fix-bugs": "./node_modules/.bin/http-server ./src -o"
+    "start": "node server.js"
   },
   "author": "Austin Rovge",
   "license": "MIT"
