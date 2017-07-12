@@ -1,8 +1,7 @@
 {
   "name": "austinrovge.com",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "This is a redesign of my personal site that serves as a way to learn ReactJS.",
-  "main": "server.js",
   "dependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
@@ -24,12 +23,14 @@
     "style-loader": "^0.16.1",
     "webpack": "^2.3.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+
+  },
   "scripts": {
-    "babel": "babel",
     "build": "./node_modules/.bin/webpack --config conf/webpack.config.js",
-    "local": "./node_modules/.bin/http-server ./src"
+    "local": "./node_modules/.bin/http-server ./src",
+    "local-beta": "./node_modules/.bin/http-server ./src -o"
   },
   "author": "Austin Rovge",
-  "license": "ISC"
+  "license": "MIT"
 }
