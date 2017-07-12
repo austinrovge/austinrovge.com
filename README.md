@@ -28,7 +28,7 @@ This starts a `nodejs` server on port `80` which will serve the client with the 
 Alternatively, a development server can be spun up with
 
 ``` bash
-$yarn run local
+$ yarn run local
 ```
 
 This starts a `nodejs` server on port `8080` which the developer can then test things with.
