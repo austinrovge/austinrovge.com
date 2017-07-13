@@ -25,8 +25,9 @@
   "devDependencies": {},
   "scripts": {
     "build": "./node_modules/.bin/webpack --config conf/webpack.config.js",
+    "local": "NODE_ENV=dev node server.js",
     "start": "NODE_ENV=prod forever start --minUptime 1000 --spinSleepTime 1000 -m5 server.js",
-    "local": "NODE_ENV=dev node server.js"
+    "stop": "forever stop server.js"
   },
   "author": "Austin Rovge",
   "license": "MIT"
