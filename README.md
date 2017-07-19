@@ -43,3 +43,5 @@ This starts a `nodejs` server on port `8080` which the developer can then test t
 * ~~Either use a node server or continue with NGINX config for redirecting to the index.html file~~
 * Transitions
 * Implement redux in a way that is natural and not forced
+* Get rid of bootstrap
+* Fix CSS to be what is expected in a react project?
