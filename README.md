@@ -45,3 +45,5 @@ This starts a `nodejs` server on port `8080` which the developer can then test t
 * Implement redux in a way that is natural and not forced
 * Get rid of bootstrap
 * Fix CSS to be what is expected in a react project?
+* Fix error with server available routes?
+* Unexpected tag '<'
