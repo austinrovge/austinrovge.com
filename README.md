@@ -46,4 +46,4 @@ This starts a `nodejs` server on port `8080` which the developer can then test t
 * Get rid of bootstrap
 * Fix CSS to be what is expected in a react project?
 * Fix error with server available routes?
-* Unexpected tag '<'
+* Unexpected tag '<'/unexpected MIME type/viewing resume.pdf
