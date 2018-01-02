@@ -19,9 +19,6 @@ export default class Contact extends Component {
                     <ul>
                         <p>These are links to other stuff that I just didn't know where to put them</p>
                         <li><a target="_blank" href="https://github.com/austinrovge">Github</a></li>
-                        <li><a target="_blank" href="http://steamcommunity.com/profiles/76561198066043724">Steam</a></li>
-                        <li>Discord - @jay2daflow#4346</li>
-                        <li><a target="_blank" href="/assets/resume.pdf">Resume</a></li>
                     </ul>
                 </div>
                 <Footer />
