@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from './base/header';
-import Footer from './base/footer';
+import Header from './base/header/header';
+import Footer from './base/footer/footer';
 
 export default class Contact extends Component {
     render () {
