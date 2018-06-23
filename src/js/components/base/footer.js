@@ -4,9 +4,8 @@ export default class Footer extends Component {
     render () {
         return (
             <div className="footer">
-                <div>I literally have nothing important enough to be 'copyrighted'.<br />The footer only exists to make this site look more important.</div>
                 <div>
-                    <div>© 2017 Austin Rovge | All Rights Reserved</div>
+
                     <div className="social-btn-div">
                         <a className="social-btn" target="_blank" href="https://github.com/austinrovge" data-hotkey="g d" aria-label="Homepage" data-ga-click="Go to Github icon:logo">
                             <svg aria-hidden="true" height="32" version="1.1" viewBox="0 0 16 16" width="32">
@@ -21,6 +20,15 @@ export default class Footer extends Component {
                         <a target="_blank" href="https://twitter.com/austinrovge">
                             <svg viewBox="328 355 335 276" height="32" width="32">
                                 <path d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570 A  70,  70 0 0 1 370, 523 A  70,  70 0 0 0 401, 521 A  70,  70 0 0 1 344, 455 A  70,  70 0 0 0 372, 460 A  70,  70 0 0 1 354, 370 A 195, 195 0 0 0 495, 442 A  67,  67 0 0 1 611, 380 A 117, 117 0 0 0 654, 363 A  65,  65 0 0 1 623, 401 A 117, 117 0 0 0 662, 390 A  65,  65 0 0 1 630, 425 Z"/>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://instagram.com/austinrovge">
+                            <svg width="32" height="32" viewBox="0 0 169.063 169.063">
+                                <g>
+                                    <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752   c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407   c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752   c17.455,0,31.656,14.201,31.656,31.655V122.407z" ></path>
+                                    <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561   C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561   c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"></path>
+                                    <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78   c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78   C135.661,29.421,132.821,28.251,129.921,28.251z"></path>
+                                </g>
                             </svg>
                         </a>
                     </div>

@@ -154,27 +154,27 @@ body, html {
 
 .footer {
   //background-color: rgba(52, 73, 94, 1);
-  background-color: #212121;
+  background-color: #fff;
   height: $footer-height;
   width: 100%;
   bottom: 0;
-  color: #ffffff;
+  color: #212121;
   position: absolute;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: left;
   left: 0;
 
   //http://svgicons.sparkk.fr svg logo src
   .social-btn-div {
     margin-top: 10px;
     text-align: center;
-    fill: #ffffff;
+    //fill: #212121;
     display: flex;
     justify-content: space-around;
 
     a {
-      fill: #ffffff;
+      fill: rgba(0, 0, 0, 0.3);
     }
   }
 }
