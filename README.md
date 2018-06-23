@@ -1,13 +1,13 @@
 # website-js
-This is a redesign of my personal site that serves as a way for me to learn ReactJS.
+This repository contains the source code for my personal website.
 
 ### Installation
 #### Downloading and compiling the code  
 The SASS and ReactJS code must first be compiled prior to starting a server  
 
 ``` bash
-$ git clone https://github.com/austinrovge/website.git
-$ cd website
+$ git clone https://github.com/austinrovge/website-js.git
+$ cd website-js
 $ yarn install
 $ yarn run build
 ```
@@ -37,7 +37,7 @@ $ yarn run local
 
 This starts a `nodejs` server on port `8080` which the developer can then test on.
 
-### Backlog
+### Future Development
 * ~~Either use a node server or continue with NGINX config for redirecting to the index.html file~~
 * Transitions
 * Get rid of bootstrap
