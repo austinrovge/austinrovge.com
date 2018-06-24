@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './header/header';
+import Header from './header';
 import Footer from './footer/footer';
 
 export default class Content extends Component {
