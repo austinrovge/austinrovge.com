@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 export default class Twitter extends Component {
 
     render() {
-
         return (
             <a target="_blank" href="https://twitter.com/austinrovge">
                 <svg viewBox="328 355 335 276" height="32" width="32">

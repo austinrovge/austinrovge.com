@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 export default class LinkedIn extends Component {
 
     render() {
-
         return (
             <a target="_blank" href="https://linkedin.com/in/austinrovge">
                 <svg width="32" height="32" viewBox="0 0 430.117 430.117">

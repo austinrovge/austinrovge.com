@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 export default class Github extends Component {
 
     render() {
-
         return (
             <a target="_blank" href="https://github.com/austinrovge">
                 <svg height="32" width="32" viewBox="0 0 16 16">

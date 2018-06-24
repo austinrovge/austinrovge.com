@@ -155,7 +155,7 @@ body, html {
 .footer {
     background-color: #fff;
     height: 100px;
-    width: 100%;
+    width: 250px;
     bottom: 0;
     color: #212121;
     margin-left: 15px;
@@ -164,23 +164,16 @@ body, html {
     justify-content: space-around;
     text-align: left;
     left: 0;
-}
-
-.footer .social-media-container {
+    margin-right: auto;
     margin-top: 10px;
-    text-align: left;
-    display: flex;
-    justify-content: space-around;
-    width: 250px;
-    margin-right: auto
 }
 
-.footer .social-media-container a {
+.footer a {
     transition-duration: 0.2s;
     fill: rgba(0, 0, 0, 0.3);
 }
 
-.footer .social-media-container a:hover {
+.footer a:hover {
     fill: rgba(0, 0, 0, 0.5);
 }
 

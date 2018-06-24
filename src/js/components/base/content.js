@@ -3,8 +3,8 @@ import Header from './header/header';
 import Footer from './footer/footer';
 
 export default class Content extends Component {
-    render () {
 
+    render () {
         return (
             <div>
                 <Header pathname={this.props.location.pathname} />
