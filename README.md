@@ -3,7 +3,7 @@ This repository contains the source code for my personal website.
 
 ### Installation
 #### Downloading and compiling the code  
-The SASS and ReactJS code must first be compiled prior to starting a server  
+The SASS and ReactJS code must first be compiled prior to starting a server.   
 
 ``` bash
 $ git clone https://github.com/austinrovge/website-js.git
