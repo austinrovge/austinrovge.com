@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body, html {
+    font-size: 16px;
+    color: #212121;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+//#wrapper {
+#app {
+    min-height: 100%;
+    position: relative;
+}
+
+[data-reactroot] {
+    height: auto !important;
+    min-height: 100% !important;
+    position: absolute !important;
+    width: 100%;
+}
