@@ -39,5 +39,6 @@ This starts a `nodejs` server on port `8080` which the developer can then test o
 
 ### Future Development
 * update site css
+* update server.js
 * make sure footer elements are centered vertically or change dimensions
 * Transitions
