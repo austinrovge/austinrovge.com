@@ -4,8 +4,9 @@
   "description": "This repository contains the source code for my personal website.",
   "dependencies": {
     "express": "^4.15.3",
-    "forever": "^0.15.3",
-    "node": "^8.9.0",
+    "node": "^10.5.0",
+    "nodemon": "^1.17.5",
+    "npm-check": "^5.7.1",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
@@ -13,8 +14,6 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
@@ -23,9 +22,8 @@
   },
   "scripts": {
     "build": "webpack --mode production --config ./util/webpack.config.js",
-    "start": "PORT=80 forever start --minUptime 1000 --spinSleepTime 1000 -m5 server.js",
-    "stop": "forever stop server.js",
-    "local": "node server.js"
+    "local": "nodemon server.js",
+    "start": "PORT=80 nodemon server.js"
   },
   "author": "Austin Rovge",
   "license": "MIT"
