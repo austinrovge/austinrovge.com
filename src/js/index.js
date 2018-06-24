@@ -11,14 +11,12 @@ class App extends Component {
     render () {
         return (
             <Router history={browserHistory}>
-                <div>
                     <Switch>
                         <Route exact path="/" render={(props) => <Content content={<Home />} pathname={props.location.pathname} {...props} />} />
                         <Route exact path="/projects" render={(props) => <Content content={<Projects />} pathname={props.location.pathname} {...props} />} />
                         <Route exact path="/contact" render={(props) => <Content content={<Contact />} pathname={props.location.pathname} {...props} />} />
                         <Route exact path="*" render={(props) => <Content content={<NotFound />} {...props} />} />
                     </Switch>
-                </div>
             </Router>
         );
     }
