@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import Links from './links';
+import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
 
     render () {
-
         return (
             <div className="header">
-                <div className="header-container">
-                    <strong><h1>austin rovge</h1></strong>
-                    <Links pathname={this.props.pathname} />
-                    <h6>developing innovative solutions never</h6>
+                <h1>Austin Rovge</h1>
+                <div className="link-container">
+                    <Link to="/">Home</Link>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
             </div>
         );
