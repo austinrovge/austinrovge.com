@@ -13,8 +13,6 @@ export default class Content extends Component {
             width: 'calc(100% - 30px)'
         }
 
-        // console.log('path:' + this.props.location.pathname)
-
         return (
             <div>
                 <Header pathname={this.props.location.pathname} />
