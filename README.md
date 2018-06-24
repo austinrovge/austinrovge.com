@@ -39,8 +39,8 @@ This starts a `nodejs` server on port `8080` which the developer can then test o
 
 ### Future Development
 * ~~Either use a node server or continue with NGINX config for redirecting to the index.html file~~
+* ~~componetize the footer elements~~
+* make sure footer elements are centered vertically or change dimensions
+* update site css
+* update the header links to have a more efficient way of changing their color and hovering
 * Transitions
-* Get rid of bootstrap
-* Fix CSS to be what is expected in a react project? (embedded in files)
-* Fix error with server available routes?
-* Unexpected tag '<'/unexpected MIME type/viewing content
