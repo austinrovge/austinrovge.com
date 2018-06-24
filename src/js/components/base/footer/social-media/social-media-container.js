@@ -9,17 +9,8 @@ export default class SocialMediaContainer extends Component {
 
     render() {
 
-        const socialMediaContainer = {
-            marginTop: '10px',
-            textAlign: 'left',
-            display: 'flex',
-            justifyContent: 'space-around',
-            width: '250px',
-            marginRight: 'auto'
-        }
-
         return (
-            <div style={socialMediaContainer}>
+            <div className="social-media-container">
                 <Github />
                 <LinkedIn />
                 <Email />

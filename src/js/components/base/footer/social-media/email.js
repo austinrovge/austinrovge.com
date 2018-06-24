@@ -1,27 +1,11 @@
 import React, { Component } from 'react';
 
 export default class Email extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { isHovered: false };
-        this.handleHover = this.handleHover.bind(this);
-    }
-
-    handleHover() {
-        this.setState({
-            isHovered: !this.state.isHovered
-        });
-    }
 
     render() {
 
-        const socialBtn = {
-            transitionDuration: '0.2s',
-            fill: this.state.isHovered ? 'rgba(0, 0, 0, 0.5' : 'rgba(0, 0, 0, 0.3'
-        }
-
         return (
-            <a onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} style={socialBtn} target="_blank" href="mailto:austinrovge@gmail.com">
+            <a target="_blank" href="mailto:austinrovge@gmail.com">
                 <svg height="32" width="32" viewBox="0 0 31.012 31.012">
                     <path d="M25.109,21.51c-0.123,0-0.246-0.045-0.342-0.136l-5.754-5.398c-0.201-0.188-0.211-0.505-0.022-0.706    c0.189-0.203,0.504-0.212,0.707-0.022l5.754,5.398c0.201,0.188,0.211,0.505,0.022,0.706C25.375,21.457,25.243,21.51,25.109,21.51z    "/>
                     <path d="M5.902,21.51c-0.133,0-0.266-0.053-0.365-0.158c-0.189-0.201-0.179-0.518,0.022-0.706l5.756-5.398    c0.202-0.188,0.519-0.18,0.707,0.022c0.189,0.201,0.179,0.518-0.022,0.706l-5.756,5.398C6.148,21.465,6.025,21.51,5.902,21.51z"/>

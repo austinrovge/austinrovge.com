@@ -35,33 +35,15 @@ export default class Links extends Component {
     render () {
 
         const home = {
-            display: 'inline-block',
-            color: this.state.isHomeHover ? '#4089B9' : '#fff',
-            fontSize: '1.5em',
-            transitionDuration: '0.2s',
-            marginBottom: '5px',
-            borderBottom: this.props.pathname === '/' ? '2px #F1C40F solid' : 'none',
-            textDecoration: 'none'
+            borderBottom: this.props.pathname === '/' ? '2px #F1C40F solid' : 'none'
         }
 
         const projects = {
-            display: 'inline-block',
-            color: this.state.isProjectsHover ? '#4089B9' : '#fff',
-            fontSize: '1.5em',
-            transitionDuration: '0.2s',
-            marginBottom: '5px',
-            borderBottom: this.props.pathname === '/projects' ? '2px #F1C40F solid' : 'none',
-            textDecoration: 'none'
+            borderBottom: this.props.pathname === '/projects' ? '2px #F1C40F solid' : 'none'
         }
 
         const contact = {
-            display: 'inline-block',
-            color: this.state.isContactHover ? '#4089B9' : '#fff',
-            fontSize: '1.5em',
-            transitionDuration: '0.2s',
-            marginBottom: '5px',
-            borderBottom: this.props.pathname === '/contact' ? '2px #F1C40F solid' : 'none',
-            textDecoration: 'none'
+            borderBottom: this.props.pathname === '/contact' ? '2px #F1C40F solid' : 'none'
         }
 
         return (

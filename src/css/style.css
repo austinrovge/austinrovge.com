@@ -13,7 +13,6 @@ body, html {
     padding: 0;
 }
 
-//#wrapper {
 #app {
     min-height: 100%;
     position: relative;
@@ -24,4 +23,169 @@ body, html {
     min-height: 100% !important;
     position: absolute !important;
     width: 100%;
+}
+
+.header {
+    height: 250px;
+    background-color: #34495e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.header .header-container {
+    display: block;
+    font-size: 1em;
+}
+.header .header-container a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.5em;
+    transition-duration: 0.2s;
+    margin-bottom: 5px;
+}
+.header .header-container a:hover {
+    text-decoration: none;
+    color: #4089B9;
+}
+.header .header-container .active-link {
+    border-bottom: 2px #f1c40f solid;
+}
+.header h6 {
+    color: #fff;
+    font-style: italic;
+}
+
+.content {
+    padding: 0 0 100px 0;
+    margin: 0 15px 0 15px;
+    clear: none;
+    overflow-y: auto;
+    width: calc(100% - 30px);
+    height: auto;
+}
+.content .home-img {
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 10px 20px -15px;
+}
+.content .project-div {
+    width: 100%;
+    border-radius: 5px;
+    height: 150px;
+    background-color: #ecf0f1;
+    padding: 2.5px 5px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.content .project-div h3 {
+    display: block;
+}
+.content ul li {
+    list-style: none;
+    font-size: 2em;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.content ul li a {
+    transition-duration: 0.2s;
+}
+.content ul li a:hover {
+    text-decoration: none;
+}
+.content .text-block {
+    display: block;
+    font-size: 1em;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.content .text {
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 0;
+}
+.content .text a {
+    transition-duration: 0.2s;
+}
+.content .text a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.content .text .shudder {
+    font-style: italic;
+}
+.content a:hover {
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.footer {
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    color: #212121;
+    margin-left: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    left: 0;
+}
+
+.footer .social-media-container {
+    margin-top: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    margin-right: auto
+}
+
+.footer .social-media-container a {
+    transition-duration: 0.2s;
+    fill: rgba(0, 0, 0, 0.3);
+}
+
+.footer .social-media-container a:hover {
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 10px !important;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 225px;
+        margin: 0 0 10px 0;
+    }
+    .header .header-container {
+        display: block;
+    }
+    .header .header-container a {
+        display: inline-block;
+    }
+    .header .header-container a:hover {
+        color: #ffffff;
+    }
+    .header .header-container .active-link:hover {
+        border-bottom: 2px #f1c40f solid;
+    }
+
+    .content .home-img {
+        width: calc(100% - 30px);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
+    .footer {
+        text-align: center;
+    }
 }
