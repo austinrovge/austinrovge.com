@@ -42,6 +42,7 @@ body {
     flex-direction: column;
     text-align: left;
     width: calc(100% - 6em);
+    margin-bottom: 20px;
 }
 
 .header h1 {
@@ -86,13 +87,29 @@ body {
 
 .content h1 {
     font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
-.content .home-img {
+.content p {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.content a {
+    text-decoration: none;
+    color: #548EBE;
+    transition-duration: 0.2s;
+}
+
+.content a:hover {
+    color: #2377BE;
+}
+
+.content .me-img {
+    margin-bottom: 20px;
     border-radius: 50%;
-    overflow: hidden;
-    margin: 20px 10px 20px -15px;
-    max-width: calc(100% - 30px);
+    max-width: 75%;
 }
 
 .content .project-div {
@@ -137,27 +154,9 @@ body {
     padding: 0;
 }
 
-.content .text a {
-    transition-duration: 0.2s;
-}
-
-.content .text a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.content .text .shudder {
-    font-style: italic;
-}
-
-.content a:hover {
-    text-decoration: none;
-    transition-duration: 0.2s;
-}
-
 .footer {
     background-color: #fff;
-    height: 100px;
+    padding-bottom: 25px;
     width: 250px;
     bottom: 0;
     position: relative;
