@@ -7,6 +7,7 @@ export default class Projects extends Component {
             <div>
                 <h1><strong>Here's some stuff I've worked on.</strong></h1>
                 <div className="project-div">
+                    <img height="32" src="/assets/atc.png" />
                     <a target="_blank" href="https://atthecontrol.com"><h3><strong>At The Control</strong></h3></a>
                     <p>ATC is a streaming hub for viewing <a target="_blank" href="https://firstinspires.org">First Robotics</a> competitions.
                         It was developed by <a target="_blank" href="https://team537.org">Team 537.</a> I learned most of my web skills through this project.</p>
