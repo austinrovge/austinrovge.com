@@ -7,7 +7,7 @@ export default class Content extends Component {
     render () {
         return (
             <div>
-                <Header pathname={this.props.location.pathname} />
+                <Header />
                 <div className="content">
                     {this.props.content}
                 </div>
