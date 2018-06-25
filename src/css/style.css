@@ -1,15 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "system-ui", sans-serif;
+    color: #000;
 }
 
 body, html {
     font-size: 16px;
-    color: #212121;
+    /*color: #212121;*/
     height: 100%;
     min-height: 100%;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3em;
+    margin-right: 3em;
     padding: 0;
 }
 
@@ -30,15 +34,12 @@ body, html {
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: #fff;
-    border-bottom: 1px #C2C2C2 solid;
+    border-bottom: 1px rgba(194, 194, 194, 0.5) solid;
     color: #000;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: left;
-    margin-left: 3em;
-    margin-right: 3em;
-    font-family: "system-ui", sans-serif;
     width: calc(100% - 6em);
 }
 
@@ -60,11 +61,11 @@ body, html {
     margin-bottom: 5px;
     font-weight: 900;
     margin-right: 15px;
+    text-decoration: none;
 }
 
 .header .link-container a:hover {
-    text-decoration: none;
-    color: #4089B9;
+    color: #548EBE;
 }
 
 .header .active-link {
@@ -77,12 +78,14 @@ body, html {
 }
 
 .content {
-    padding: 0 0 100px 0;
-    margin: 0 15px 0 15px;
     clear: none;
     overflow-y: auto;
     width: calc(100% - 30px);
     height: auto;
+}
+
+.content h1 {
+    font-weight: 700;
 }
 
 .content .home-img {
@@ -157,8 +160,6 @@ body, html {
     height: 100px;
     width: 250px;
     bottom: 0;
-    color: #212121;
-    margin-left: 15px;
     position: relative;
     display: flex;
     justify-content: space-around;
