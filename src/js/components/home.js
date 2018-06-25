@@ -5,8 +5,8 @@ export default class Home extends Component {
     render () {
         return (
             <div>
-                <img className="me-img" src="/assets/me.jpg" />
                 <h1><strong>Hi, I'm Austin.</strong></h1>
+                <img className="me-img" src="/assets/me.jpg" />
                 <div>
                     <p>I am used to doing web development but I am currently learning more about many different languages.</p>
                     <p>I am interested in things like space, programming (obviously), and spending time with my friends.</p>

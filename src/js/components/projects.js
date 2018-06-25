@@ -5,7 +5,7 @@ export default class Projects extends Component {
     render () {
         return (
             <div>
-                <h1>Stuff I've worked on</h1>
+                <h1><strong>Here's some stuff I've worked on.</strong></h1>
                 <div className="project-div">
                     <a target="_blank" href="https://atthecontrol.com"><h3><strong>At The Control</strong></h3></a>
                     <p>ATC is a streaming hub for viewing <a target="_blank" href="https://firstinspires.org">First Robotics</a> competitions.

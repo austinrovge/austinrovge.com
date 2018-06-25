@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-export default class Contact extends Component {
+export default class Photography extends Component {
 
     render () {
         return (
             <div>
-                <h1><strong>Like what you see?</strong></h1>
+                <h1><strong>I like taking pictures.</strong></h1>
                 <ul>
                     <p>I can't see any reason for anyone contacting me other than letting me know my code on github has huge issues</p>
                     <li><a target="_blank" href="mailto:austinrovge@gmail.com">austinrovge@gmail.com</a></li>
