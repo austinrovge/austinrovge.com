@@ -47,6 +47,7 @@ body {
 
 .header h1 {
     font-weight: 900;
+    font-size: 3em;
 }
 
 .header .link-container {
@@ -81,13 +82,13 @@ body {
 .content {
     clear: none;
     overflow-y: auto;
-    width: calc(100% - 30px);
+    width: calc(100% - 6em);
     height: auto;
 }
 
 .content h1 {
-    font-weight: 700;
-    font-size: 3em;
+    font-weight: 900;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
@@ -113,7 +114,6 @@ body {
 }
 
 .content .project-div {
-    width: 100%;
     border-radius: 5px;
     height: 150px;
     background-color: #ecf0f1;
