@@ -92,7 +92,7 @@ body {
 }
 
 .content p {
-    font-size: 1em;
+    font-size: 1.25em;
     margin-bottom: 15px;
 }
 
@@ -190,7 +190,7 @@ body {
 .footer {
     background-color: #fff;
     padding-bottom: 25px;
-    width: 250px;
+    width: 20em;
     bottom: 0;
     position: relative;
     display: flex;
