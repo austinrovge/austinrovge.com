@@ -10,7 +10,7 @@ export default class Home extends Component {
                 <Header />
                 <div className="content">
                     <h1><strong>Hi, I'm Austin.</strong></h1>
-                    <img className="me-img" src="/src/assets/me.jpg" />
+                    <img className="me-img" src="/assets/me.jpg" />
                     <div>
                         <p>I love programming.</p>
                         <p>I first got a taste in middle school when I discovered the <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codeacademy course for javascript</a>. I remember being so happy learning basic web development.</p>

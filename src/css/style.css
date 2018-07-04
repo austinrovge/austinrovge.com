@@ -81,7 +81,7 @@ body {
 .content {
     clear: none;
     overflow-y: auto;
-    width: calc(100% - 6em);
+    width: auto;
     height: auto;
 }
 
