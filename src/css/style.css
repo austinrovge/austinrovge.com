@@ -110,16 +110,50 @@ body {
 .content .me-img {
     margin-bottom: 20px;
     border-radius: 50%;
-    max-width: 75%;
+    /*max-width: 75%;*/
+    max-width: 365px;
+    float: right;
 }
 
 .content .project-div {
     border-radius: 5px;
-    height: 150px;
+    height: 200px;
     background-color: #ecf0f1;
     padding: 2.5px 5px;
     margin-bottom: 10px;
     color: #000000;
+}
+
+.content .project {
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: #ECF0F1;
+    color: #000;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    line-height: 200px;
+
+    position: relative;
+}
+
+.content .project img {
+    width: 100%;
+    opacity: 0.4;
+    z-index: 0;
+
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.content .project h1 {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
 }
 
 .content .project-div h3 {
