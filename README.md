@@ -29,6 +29,7 @@ $ yarn run local
 
 ### Future Development
 * update site css [IN PROGRESS]
+* fix react router ui flicker
 * update server.js
 * determine if scss compiled with webpack when react is compiled is possible without node-sass (prior issues)
 * make sure footer elements are centered vertically or change dimensions

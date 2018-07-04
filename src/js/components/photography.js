@@ -4,7 +4,7 @@ export default class Photography extends Component {
 
     render () {
         return (
-            <div>
+            <div className="content">
                 <h1><strong>I like taking pictures.</strong></h1>
                 <ul>
                     <p>I can't see any reason for anyone contacting me other than letting me know my code on github has huge issues</p>
