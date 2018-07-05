@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, browserHistory, Switch } from 'react-ro
 import Home from './components/home';
 import Photography from './components/photography';
 import Projects from './components/projects';
-import Contact from './components/contact';
+import Resume from './components/resume';
 import NotFound from './components/not-found';
 
 render((
@@ -13,7 +13,7 @@ render((
             <Route exact path="/" component={Home} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/photography" component={Photography} />
-            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/resume" component={Resume} />
             <Route exact path="*" component={NotFound} />
         </Switch>
     </Router>
