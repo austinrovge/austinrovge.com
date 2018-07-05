@@ -9,7 +9,8 @@ export default class NotFound extends Component {
             <div>
                 <Header />
                 <div className="content">
-                    <h1><strong>404 Not Found :(</strong></h1>
+                    <h1><strong>Looks like this link doesn't exist.</strong></h1>
+                    <p>Hopefully you typed something in wrong and I didn't mess up!</p>
                 </div>
                 <Footer />
             </div>
