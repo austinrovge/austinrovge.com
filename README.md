@@ -28,9 +28,11 @@ $ yarn run local
 ```
 
 ### Future Development
-* update site css [IN PROGRESS]
+* finish projects page
+* add content to photography page
 * fix react router ui flicker
+* update home page CSS with personal picture
 * update server.js
 * determine if scss compiled with webpack when react is compiled is possible without node-sass (prior issues)
 * make sure footer elements are centered vertically or change dimensions
-* transitions
+* transitions?
