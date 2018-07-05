@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Github extends Component {
 
-    render() {
+    render () {
         return (
             <a target="_blank" href="https://github.com/austinrovge">
                 <svg height="2em" width="2em" viewBox="0 0 16 16">
