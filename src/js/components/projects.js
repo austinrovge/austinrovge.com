@@ -22,7 +22,7 @@ export default class Projects extends Component {
                             <div className="project">
                                 <a href="https://github.com/austinrovge/website-js" target="_blank">
                                     <h3>This site</h3>
-                                    <img className="project" src="/assets/first.png" />
+                                    <img className="project" src="/assets/austinrovge.me.png" />
                                 </a>
                             </div>
                         </div>
