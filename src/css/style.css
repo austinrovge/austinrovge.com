@@ -1,3 +1,5 @@
+/* Generic Element CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 }
 
 body, html {
-    font-size: 16px;
+    font-size: 1em;
     height: 100%;
     min-height: 100%;
     margin: 0;
@@ -18,25 +20,23 @@ body {
     margin-right: 3em;
 }
 
-/*#app {*/
-    /*min-height: 100%;*/
-    /*position: relative;*/
-/*}*/
+a {
+    transition-duration: 0.2s;
+    text-decoration: none;
+    color: #2377BE;
+}
 
-/*[data-reactroot] {*/
-    /*height: auto !important;*/
-    /*min-height: 100% !important;*/
-    /*position: absolute !important;*/
-    /*width: 100%;*/
-/*}*/
+a:hover {
+    color: #548EBE;
+}
+
+/* Header CSS */
 
 .header {
     height: auto;
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: #fff;
     border-bottom: 1px rgba(194, 194, 194, 0.5) solid;
-    color: #000;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -57,29 +57,14 @@ body {
 .header .link-container a {
     width: auto;
     display: inline-block;
-    color: #2377BE;
     font-size: 1.5em;
-    transition-duration: 0.2s;
     font-weight: 900;
     margin-right: 15px;
-    text-decoration: none;
 }
 
-.header .link-container a:hover {
-    color: #548EBE;
-}
-
-.header .active-link {
-    border-bottom: 2px #f1c40f solid;
-}
-
-.header h6 {
-    color: #fff;
-    font-style: italic;
-}
+/* Content CSS */
 
 .content {
-    clear: none;
     overflow-y: auto;
     width: auto;
     height: auto;
@@ -93,22 +78,24 @@ body {
 
 .content p {
     font-size: 1.25em;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
+    clear: left;
 }
 
-.content a {
-    text-decoration: none;
-    color: #548EBE;
-    transition-duration: 0.2s;
-}
+/*.content a {*/
+    /*text-decoration: none;*/
+    /*color: #548EBE;*/
+    /*transition-duration: 0.2s;*/
+/*}*/
 
-.content a:hover {
-    color: #2377BE;
-}
+/*.content a:hover {*/
+    /*color: #2377BE;*/
+/*}*/
 
 .content object {
     width: 34em;
     height: 44em;
+    border: 1px rgba(194, 194, 194, 0.5) solid;
 }
 
 .content .me-img {
@@ -117,6 +104,39 @@ body {
     width: 100%;
     max-width: 365px;
     float: right;
+    align-self: center;
+}
+
+/* Content > Projects CSS */
+
+.content .projects {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.content .project {
+    height: auto;
+    width: 256px;
+    border-radius: 16px;
+    margin-right: 1em;
+}
+
+.content .project a h3 {
+    font-weight: 900;
+    color: #2377BE;
+}
+
+.content .project a {
+    transition-duration: 0.2s;
+}
+
+.content .project a:hover {
+    color: #548EBE;
+}
+
+.content .project-link {
+    color: #2377BE;
 }
 
 .content .project-div {
@@ -126,38 +146,6 @@ body {
     padding: 2.5px 5px;
     margin-bottom: 10px;
     color: #000000;
-}
-
-.content .project {
-    border-radius: 5px;
-    height: 200px;
-    margin-bottom: 10px;
-    background-color: #ECF0F1;
-    color: #000;
-    font-weight: 700;
-    font-size: 2em;
-    text-align: center;
-    line-height: 200px;
-
-    position: relative;
-}
-
-.content .project img {
-    width: 100%;
-    opacity: 0.4;
-    z-index: 0;
-
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.content .project h1 {
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 1;
 }
 
 .content .project-div h3 {
@@ -179,19 +167,6 @@ body {
     text-decoration: none;
 }
 
-.content .text-block {
-    display: block;
-    font-size: 1em;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-.content .text {
-    font-size: 1.5em;
-    display: inline-block;
-    padding: 0;
-}
-
 .footer {
     background-color: #fff;
     padding-bottom: 25px;
@@ -203,7 +178,7 @@ body {
     text-align: left;
     left: 0;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .footer a {
