@@ -117,55 +117,25 @@ a:hover {
 
 .content .project {
     height: auto;
-    width: 256px;
-    border-radius: 16px;
     margin-right: 1em;
 }
 
-.content .project a h3 {
+.content .project h3 {
     font-weight: 900;
     color: #2377BE;
-}
-
-.content .project a {
     transition-duration: 0.2s;
 }
 
-.content .project a:hover {
+.content .project img {
+    width: 256px;
+    border-radius: 16px;
+}
+
+.content .project a:hover>h3 {
     color: #548EBE;
 }
 
-.content .project-link {
-    color: #2377BE;
-}
-
-.content .project-div {
-    border-radius: 5px;
-    height: 200px;
-    background-color: #ecf0f1;
-    padding: 2.5px 5px;
-    margin-bottom: 10px;
-    color: #000000;
-}
-
-.content .project-div h3 {
-    display: block;
-}
-
-.content ul li {
-    list-style: none;
-    font-size: 2em;
-    margin-left: 15px;
-    margin-bottom: 5px;
-}
-
-.content ul li a {
-    transition-duration: 0.2s;
-}
-
-.content ul li a:hover {
-    text-decoration: none;
-}
+/* Footer CSS */
 
 .footer {
     background-color: #fff;
@@ -189,6 +159,8 @@ a:hover {
 .footer a:hover {
     fill: rgba(0, 0, 0, 0.5);
 }
+
+/* Phone CSS */
 
 @media screen and (max-width: 768px) {
     body {

@@ -20,8 +20,8 @@ export default class Projects extends Component {
                             </div>
 
                             <div className="project">
-                                <a href="https://atthecontrol.com" target="_blank">
-                                    <h3>At The Control</h3>
+                                <a href="https://github.com/austinrovge/website-js" target="_blank">
+                                    <h3>This site</h3>
                                     <img className="project" src="/assets/first.png" />
                                 </a>
                             </div>
