@@ -31,7 +31,6 @@ $ yarn run local
 * finish projects page
 * add content to photography page
 * fix react router ui flicker (decide to remove or keep content component)
-* update home page CSS with personal picture
 * update server.js
 * determine if scss compiled with webpack when react is compiled is possible without node-sass (prior issues)
 * make sure footer elements are centered vertically or change dimensions
