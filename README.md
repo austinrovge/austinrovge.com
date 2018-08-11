@@ -29,6 +29,8 @@ $ yarn run local
 
 ### Future Development
 * finish projects page
+* nodemon/pm2
+* choose npm or yarn to use in project
 * add content to photography page
 * fix react router ui flicker (decide to remove or keep content component)
 * update server.js
