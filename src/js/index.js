@@ -5,6 +5,7 @@ import Home from './components/home';
 import Photography from './components/photography';
 import Projects from './components/projects/projects';
 import AtTheControl from './components/projects/atthecontrol';
+import Website from './components/projects/website';
 import Resume from './components/resume';
 import NotFound from './components/not-found';
 
@@ -14,6 +15,7 @@ render((
             <Route exact path="/" component={Home} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/projects/atthecontrol" component={AtTheControl} />
+            <Route exact path="/projects/website" component={Website} />
             <Route exact path="/website" component={Projects} />
             <Route exact path="/photography" component={Photography} />
             <Route exact path="/resume" component={Resume} />
