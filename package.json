@@ -23,7 +23,7 @@
     "build-prod": "webpack --mode production --config ./util/webpack.config.js",
     "build-dev": "webpack --mode development --config ./util/webpack.config.js",
     "local": "nodemon server.js",
-    "start": "PORT=80 nodemon server.js"
+    "start": "PORT=80 pm2 start server.js"
   },
   "author": "Austin Rovge",
   "license": "MIT"
