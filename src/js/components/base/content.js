@@ -9,7 +9,7 @@ export default class Content extends Component {
             <div>
                 <Header />
                 <div className="content">
-                    {this.props.content}
+                    {this.props.children}
                 </div>
                 <Footer />
             </div>
