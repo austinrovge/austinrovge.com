@@ -14,6 +14,7 @@
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.6",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
@@ -23,9 +24,6 @@
     "react-router-dom": "^4.3.1",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
-  },
-  "peerDependencies": {
-    "@babel/core": "^7.1.6"
   },
   "scripts": {
     "build-prod": "webpack --mode production --config ./util/webpack.config.js",
