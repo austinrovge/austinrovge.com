@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This repository contains the source code for my personal website.",
   "dependencies": {
+    "babel-watch": "^2.0.7",
     "express": "^4.15.3",
     "node": "^10.5.0",
     "nodemon": "^1.17.5",
@@ -22,7 +23,7 @@
   "scripts": {
     "build-prod": "webpack --mode production --config ./util/webpack.config.js",
     "build-dev": "webpack --mode development --config ./util/webpack.config.js",
-    "local": "nodemon server.js",
+    "local": "babel-watch server.js",
     "start": "PORT=80 pm2 start server.js --watch",
     "stop": "pm2 stop server.js"
   },
