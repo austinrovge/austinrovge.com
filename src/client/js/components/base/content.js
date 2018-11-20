@@ -4,15 +4,15 @@ import Footer from './footer';
 
 export default class Content extends Component {
 
-    render () {
-        return (
-            <div>
-                <Header />
-                <div className="content">
-                    {this.props.children}
-                </div>
-                <Footer />
-            </div>
-        );
-    }
+	render () {
+		return (
+			<div>
+				<Header />
+				<div className="content">
+					{this.props.children}
+				</div>
+				<Footer />
+			</div>
+		);
+	}
 }

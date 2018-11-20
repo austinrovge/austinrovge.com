@@ -1,12 +1,13 @@
 {
-  "name": "website-js",
+  "name": "ar-website",
   "version": "1.0.0",
   "description": "This repository contains the source code for my personal website.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/austinrovge/website-js.git"
+    "url": "https://github.com/austinrovge/ar-website.git"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "babel-watch": "^2.0.7",
     "express": "^4.16.4",
     "node": "^11.1.0",
@@ -34,7 +35,8 @@
   "scripts": {
     "build-prod": "webpack --mode production --config ./util/webpack.config.js",
     "build-dev": "webpack --mode development --config ./util/webpack.config.js",
-    "lint": "eslint src",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
     "local": "babel-watch ./src/server/server.js",
     "start": "PORT=80 pm2 start --interpreter babel-watch ./src/server/server.js --watch",
     "stop": "pm2 stop server.js"

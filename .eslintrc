@@ -1,24 +1,17 @@
-//{
-//    "plugins": [
-//        "react"
-//    ],
-//    "extends": [
-//        "eslint:recommended",
-//        "plugin:react/recommended"
-//    ],
-//    "parserOptions": {
-//        "ecmaVersion": 6,
-//        "sourceType": "module",
-//        "ecmaFeatures": {
-//            "jsx": true
-//        }
-//    },
-//    "rules": {
-//        "no-set-state": "off"
-//    }
-//}
-
-{"extends": [
-"eslint:recommended",
-"plugin:react/recommended"
-]}
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
+  "rules": {
+  "semi": 0,
+    "indent": ["error", "tab"]
+  }
+}

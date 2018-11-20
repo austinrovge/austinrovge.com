@@ -10,16 +10,16 @@ import Resume from './components/resume';
 import NotFound from './components/not-found';
 
 render((
-    <Router history={browserHistory}>
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/projects/atthecontrol" component={AtTheControl} />
-            <Route exact path="/projects/website" component={Website} />
-            <Route exact path="/website" component={Projects} />
-            <Route exact path="/photography" component={Photography} />
-            <Route exact path="/resume" component={Resume} />
-            <Route exact path="*" component={NotFound} />
-        </Switch>
-    </Router>
+	<Router history={browserHistory}>
+		<Switch>
+			<Route exact path="/" component={Home} />
+			<Route exact path="/projects" component={Projects} />
+			<Route exact path="/projects/atthecontrol" component={AtTheControl} />
+			<Route exact path="/projects/website" component={Website} />
+			<Route exact path="/website" component={Projects} />
+			<Route exact path="/photography" component={Photography} />
+			<Route exact path="/resume" component={Resume} />
+			<Route exact path="*" component={NotFound} />
+		</Switch>
+	</Router>
 ), document.getElementById('app'));

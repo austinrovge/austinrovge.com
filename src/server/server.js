@@ -13,9 +13,9 @@ app.use(express.static(path.join(__dirname, '/../client')))
 app.use('/favicon.ico', express.static(path.join(__dirname, '/../client/assets/favicons/favicon.ico')))
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/../client/index.html'))
+	res.sendFile(path.join(__dirname + '/../client/index.html'))
 })
 
 app.listen(PORT, () => {
-    console.log('Server listening on port: ' + PORT)
+	console.log('Server listening on port: ' + PORT)
 })
