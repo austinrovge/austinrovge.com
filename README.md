@@ -3,28 +3,30 @@ This repository contains the source code for my personal website.
 
 ### Installation
 #### Downloading and compiling the code  
-The `React` code must first be compiled prior to starting a server.   
+The repository has to be cloned and node packages need to first be installed.
 
 ``` bash
-$ git clone https://github.com/austinrovge/website-js.git
-$ cd website-js
-$ yarn install
-$ yarn run build
+$ git clone https://github.com/austinrovge/austin-website.git
+$ cd austin-website
+$ npm install -g
 ```
 
-### Starting a Server
+### Server Environments
 #### Production
-A `node` server can be started on port `80` using:
+A production environment can be built and started on port 80 with these commands:
+`node` server can be started on port `80` using:
 
 ``` bash
-$ yarn run start
+$ npm run build-prod
+$ npm run start
 ```
 
 #### Development
-Alternatively, the `node` server can be spun up on port `8080` with:
+A development environment can be built and spun up on port 8080 with the following commands:
 
 ``` bash
-$ yarn run local
+$ npm run build-dev
+$ npm run local
 ```
 
 ### Future Development
