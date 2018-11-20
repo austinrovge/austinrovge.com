@@ -1,4 +1,4 @@
 .idea
 node_modules
 *.log
-src/js/app.js
+src/client/js/app.js

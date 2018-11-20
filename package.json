@@ -36,8 +36,8 @@
     "build-prod": "webpack --mode production --config ./util/webpack.config.js",
     "build-dev": "webpack --mode development --config ./util/webpack.config.js",
     "lint": "eslint src",
-    "local": "babel-watch server.js",
-    "start": "PORT=80 pm2 start server.js --watch",
+    "local": "babel-watch ./src/server/server.js",
+    "start": "PORT=80 pm2 start --interpreter babel-watch ./src/server/server.js --watch",
     "stop": "pm2 stop server.js"
   },
   "author": "Austin Rovge",
