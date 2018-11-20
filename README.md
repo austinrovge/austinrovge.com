@@ -1,4 +1,4 @@
-# website-js
+# austin-website
 This repository contains the source code for my personal website.
 
 ### Installation
@@ -29,11 +29,8 @@ $ yarn run local
 
 ### Future Development
 * finish projects page
-* nodemon/pm2
-* choose npm or yarn to use in project
 * add content to photography page
-* fix react router ui flicker (decide to remove or keep content component)
-* update server.js
-* determine if scss compiled with webpack when react is compiled is possible without node-sass (prior issues)
-* make sure footer elements are centered vertically or change dimensions
+* fix react router ui flicker
+* add SASS without node-sass or affecting webpack compile times substantially
+* center all footer elements vertically/change dimensions
 * transitions?
