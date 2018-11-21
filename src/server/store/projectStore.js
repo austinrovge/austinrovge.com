@@ -1,7 +1,7 @@
 import Projects from '../database/project'
 import Promise from 'bluebird'
 
-export const storeProject = (projectData) => {
+export const storeProject = projectData => {
 	return new Promise((resolve, reject) => {
 		Projects.findOrCreate({
 			where: {
@@ -14,10 +14,10 @@ export const storeProject = (projectData) => {
 				resolve(project)
 			} else {
 				Projects.update(projectData, { where: { name: projectData.name }})
-					.then((updatedProject) => {
+					.then(updatedProject => {
 						console.log('Project Updated')
 						resolve(updatedProject)
-					}).catch((error) => {
+					}).catch(error => {
 						reject(error)
 					})
 			}
@@ -28,10 +28,10 @@ export const storeProject = (projectData) => {
 export const getAllProjects = () => {
 	return new Promise((resolve, reject) => {
 		Projects.findAll()
-			.then((results) => {
+			.then(results => {
 				resolve(results)
 			})
-			.catch((error) => {
+			.catch(error => {
 				reject(error)
 			})
 	})

@@ -1,6 +1,6 @@
 import projectController from './controllers/projectController'
 
-export default (express) => {
+export default express => {
 
 	const router = express.Router()
 
