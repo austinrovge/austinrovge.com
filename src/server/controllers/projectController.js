@@ -3,12 +3,12 @@ import 'babel-polyfill'
 
 export default async (req, res) => {
 
-	const projects = await getAllProjects()
+	const allProjects = await getAllProjects()
 
-	let allProjects = []
+	let data = []
 
-	projects.forEach(project => {
-		allProjects.push({
+	allProjects.forEach(project => {
+		data.push({
 			name: project.name,
 			html_url: project.html_url,
 			description: project.description,
@@ -18,5 +18,5 @@ export default async (req, res) => {
 		})
 	})
 
-	res.send(allProjects)
+	res.send(data)
 }

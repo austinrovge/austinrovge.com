@@ -2,7 +2,7 @@ import axios from 'axios'
 import { scheduleJob }  from 'node-schedule'
 import { storeProject } from './store/projectStore'
 
-scheduleJob('*/1 * * * *', time => {
+scheduleJob('0 */1 * * *', time => {
 
 	axios.get('https://api.github.com/users/austinrovge/repos')
 		.then(results => {
