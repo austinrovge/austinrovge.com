@@ -3,7 +3,20 @@ import 'babel-polyfill'
 
 export default async (req, res) => {
 
-	const data = await getAllProjects()
+	const projects = await getAllProjects()
 
-	res.send(JSON.stringify(data))
+	let allProjects = []
+
+	projects.forEach(project => {
+		allProjects.push({
+			name: project.name,
+			html_url: project.html_url,
+			description: project.description,
+			languages_url: project.languages_url,
+			homepage: project.homepage,
+			language: project.language
+		})
+	})
+
+	res.send(allProjects)
 }
