@@ -1,4 +1,4 @@
-import getAllProjects from '../store/projectStore'
+import { getAllProjects } from '../store/projectStore'
 import 'babel-polyfill'
 
 export default async (req, res) => {

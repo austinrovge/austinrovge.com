@@ -1,12 +1,11 @@
 DROP TABLE IF EXISTS projects;
 
 CREATE TABLE `projects`(
-    `name` varchar(30) NOT NULL,
-    `language` varchar(30) NOT NULL,
-    `description` varchar(30) NOT NULL,
+    `name` varchar(500) NOT NULL,
+    `html_url` varchar(500) NOT NULL,
+    `description` varchar(500) NOT NULL,
+    `languages_url` varchar(500) NOT NULL,
+    `homepage` varchar(500) DEFAULT "",
+    `language` varchar(500) DEFAULT "",
     PRIMARY KEY (`name`)
 );
-
-INSERT INTO `projects` VALUES ("test project", "Python", "test description pls ignore");
-
-SELECT * FROM projects;

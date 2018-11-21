@@ -7,13 +7,25 @@ const Project = databaseApi.define('projects', {
 		type: Sequelize.STRING,
 		field: 'name'
 	},
+	description: {
+		type: Sequelize.STRING,
+		field: 'description'
+	},
+	homepage: {
+		type: Sequelize.STRING,
+		field: 'homepage'
+	},
+	html_url: {
+		type: Sequelize.STRING,
+		field: 'html_url'
+	},
 	language: {
 		type: Sequelize.STRING,
 		field: 'language'
 	},
-	description: {
+	languages_url: {
 		type: Sequelize.STRING,
-		field: 'description'
+		field: 'languages_url'
 	}},
 {
 	freezeTableName: true
