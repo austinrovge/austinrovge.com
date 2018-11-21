@@ -1,6 +1,7 @@
 import path from 'path'
 import express from 'express'
 import routes from './routes'
+import './importProjects'
 
 const app = routes(express)
 let PORT = process.env.PORT || 8080
