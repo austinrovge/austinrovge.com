@@ -1,15 +1,16 @@
+import projectController from './controllers/projectController'
+
 export default (express) => {
 
-	const app = express()
 	const router = express.Router()
 
-	router.route('/getProjects').get(
-		(req, resp) => {
-			resp.send('GET PROJECTS ROUTE MESSAGE')
-		}
+	router.route('/getAllProjects').get(
+		projectController
 	)
 
+	const app = express()
 	app.use('/api', router)
 	app.use(router)
+
 	return app
 }
