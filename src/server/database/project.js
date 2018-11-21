@@ -1,7 +1,7 @@
 import Sequelize from 'sequelize'
 import databaseApi from './databaseApi'
 
-const Project = databaseApi.define('projects', {
+export default databaseApi.define('projects', {
 	name: {
 		primaryKey: true,
 		type: Sequelize.STRING,
@@ -30,5 +30,3 @@ const Project = databaseApi.define('projects', {
 {
 	freezeTableName: true
 })
-
-export default Project

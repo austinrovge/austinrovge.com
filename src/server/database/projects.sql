@@ -1,6 +1,7 @@
-DROP TABLE IF EXISTS projects;
+DROP DATABASE IF EXISTS rovgedb;
+CREATE DATABASE rovgedb;
 
-CREATE TABLE `projects`(
+CREATE TABLE rovgedb.projects(
     `name` varchar(500) NOT NULL,
     `html_url` varchar(500) NOT NULL,
     `description` varchar(500) NOT NULL,
