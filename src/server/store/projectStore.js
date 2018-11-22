@@ -10,12 +10,10 @@ export const storeProject = projectData => {
 			defaults: projectData
 		}).spread((project, created) => {
 			if (created) {
-				console.log('Project Created')
 				resolve(project)
 			} else {
 				Projects.update(projectData, { where: { name: projectData.name }})
 					.then(updatedProject => {
-						console.log('Project Updated')
 						resolve(updatedProject)
 					}).catch(error => {
 						reject(error)

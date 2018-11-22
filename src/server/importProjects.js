@@ -2,8 +2,7 @@ import axios from 'axios'
 import { scheduleJob }  from 'node-schedule'
 import { storeProject } from './store/projectStore'
 
-scheduleJob('0 */1 * * *', time => {
-
+const updateProjects = () => {
 	axios.get('https://api.github.com/users/austinrovge/repos')
 		.then(results => {
 			results.data.forEach(project => {
@@ -12,4 +11,10 @@ scheduleJob('0 */1 * * *', time => {
 		}).catch(error => {
 			console.log(error.response)
 		})
+}
+
+scheduleJob('0 */1 * * *', time => {
+	updateProjects()
 })
+
+updateProjects()
