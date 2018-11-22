@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Content from './base/content';
+import React, { Component } from 'react'
+import Content from './base/content'
 
 export default class Projects extends Component {
 
@@ -21,7 +21,7 @@ export default class Projects extends Component {
 		return (
 			<Content className="content">
 				<h1><strong>Here's some stuff I've worked on.</strong></h1>
-				<p>This page pulls my public projects from Github. I also have some other projects that aren't listed on here!</p>
+				<p>This page pulls my public projects from GitHub. I also have some other projects that aren't listed on here!</p>
 				<div className="projects">
 					{this.state.projects.map((project, i) => {
 						return (

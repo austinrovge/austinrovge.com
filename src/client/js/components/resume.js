@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Content from './base/content';
+import React, { Component } from 'react'
+import Content from './base/content'
 
 export default class Home extends Component {
 
@@ -12,6 +12,6 @@ export default class Home extends Component {
 					<p>Looks like there's something wrong with the embedded PDF, <a href="/assets/resume.pdf" target="_blank">click here to view my resume!</a></p>
 				</object>
 			</Content>
-		);
+		)
 	}
 }

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Content from './base/content';
+import React, { Component } from 'react'
+import Content from './base/content'
 
 export default class Photography extends Component {
 
@@ -9,6 +9,6 @@ export default class Photography extends Component {
 				<h1><strong>I like taking pictures.</strong></h1>
 				<p>This section will have more soon!</p>
 			</Content>
-		);
+		)
 	}
 }

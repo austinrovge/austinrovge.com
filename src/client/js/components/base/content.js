@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Header from './header';
-import Footer from './footer';
+import React, { Component } from 'react'
+import Header from './header'
+import Footer from './footer'
 
 export default class Content extends Component {
 
@@ -13,6 +13,6 @@ export default class Content extends Component {
 				</div>
 				<Footer />
 			</div>
-		);
+		)
 	}
 }

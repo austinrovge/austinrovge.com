@@ -1,11 +1,11 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { BrowserRouter as Router, Route, browserHistory, Switch } from 'react-router-dom';
-import Home from './components/home';
-import Photography from './components/photography';
-import Projects from './components/projects';
-import Resume from './components/resume';
-import NotFound from './components/not-found';
+import React from 'react'
+import { render } from 'react-dom'
+import { BrowserRouter as Router, Route, browserHistory, Switch } from 'react-router-dom'
+import Home from './components/home'
+import Photography from './components/photography'
+import Projects from './components/projects'
+import Resume from './components/resume'
+import NotFound from './components/not-found'
 
 render((
 	<Router history={browserHistory}>
@@ -18,4 +18,4 @@ render((
 			<Route exact path="*" component={NotFound} />
 		</Switch>
 	</Router>
-), document.getElementById('app'));
+), document.getElementById('app'))

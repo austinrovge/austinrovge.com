@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Github from './social-media/github'
+import React, { Component } from 'react'
+import GitHub from './social-media/github'
 import LinkedIn from './social-media/linkedin'
 import Email from './social-media/email'
 import Twitter from './social-media/twitter'
@@ -10,12 +10,12 @@ export default class Footer extends Component {
 	render() {
 		return (
 			<div className="footer">
-				<Github />
+				<GitHub />
 				<LinkedIn />
 				<Email />
 				<Twitter />
 				<Instagram />
 			</div>
-		);
+		)
 	}
 }
