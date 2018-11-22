@@ -3,7 +3,7 @@ import Content from './base/content';
 
 export default class Photography extends Component {
 
-	render () {
+	render() {
 		return (
 			<Content className="content">
 				<h1><strong>I like taking pictures.</strong></h1>

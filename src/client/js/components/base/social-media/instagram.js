@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Instagram extends Component {
 
-	render () {
+	render() {
 		return (
 			<a target="_blank" href="https://instagram.com/austinrovge">
 				<svg width="2em" height="2em" viewBox="0 0 169.063 169.063">

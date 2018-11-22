@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Email extends Component {
 
-	render () {
+	render() {
 		return (
 			<a target="_blank" href="mailto:rovgea@msoe.edu">
 				<svg height="2em" width="2em" viewBox="0 0 31.012 31.012">

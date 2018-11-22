@@ -4,7 +4,7 @@ import Footer from './footer';
 
 export default class Content extends Component {
 
-	render () {
+	render() {
 		return (
 			<div>
 				<Header />

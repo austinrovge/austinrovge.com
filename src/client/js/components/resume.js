@@ -3,7 +3,7 @@ import Content from './base/content';
 
 export default class Home extends Component {
 
-	render () {
+	render() {
 		return (
 			<Content className="content">
 				<h1><strong>I like being hired.</strong></h1>

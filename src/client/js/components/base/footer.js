@@ -7,7 +7,7 @@ import Instagram from './social-media/instagram'
 
 export default class Footer extends Component {
 
-	render () {
+	render() {
 		return (
 			<div className="footer">
 				<Github />

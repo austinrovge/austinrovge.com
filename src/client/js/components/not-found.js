@@ -3,7 +3,7 @@ import Content from './base/content';
 
 export default class NotFound extends Component {
 
-	render () {
+	render() {
 		return (
 			<Content className="content">
 				<h1><strong>Looks like this link doesn't exist.</strong></h1>
