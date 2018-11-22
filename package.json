@@ -44,8 +44,8 @@
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "start-db": "service mysql start",
-    "create-db": "mysql -u root --password=password < ./src/server/database/projects.sql",
-    "start-create-db": "npm run start-db && npm run create-table",
+    "create-db": "mysql -u root --password=password < ./src/server/components/database/projects.sql",
+    "start-create-db": "npm run start-db && npm run create-db",
     "local": "babel-watch ./src/server/server.js",
     "start": "PORT=80 pm2 start --interpreter babel-watch ./src/server/server.js --watch",
     "stop": "pm2 stop server.js"

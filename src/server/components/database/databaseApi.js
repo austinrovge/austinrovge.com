@@ -4,6 +4,7 @@ export default new Sequelize('rovgedb', 'root', 'password', {
 	host: 'localhost',
 	port: 3306,
 	dialect: 'mysql',
+	omitNull: true,
 	define: {
 		timestamps: false
 	},
