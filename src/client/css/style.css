@@ -77,20 +77,10 @@ a:hover {
 }
 
 .content p {
-    font-size: 1.25em;
+    font-size: 1em;
     padding-bottom: 15px;
     clear: left;
 }
-
-/*.content a {*/
-    /*text-decoration: none;*/
-    /*color: #548EBE;*/
-    /*transition-duration: 0.2s;*/
-/*}*/
-
-/*.content a:hover {*/
-    /*color: #2377BE;*/
-/*}*/
 
 .content object {
     width: 34em;
@@ -115,24 +105,59 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.content .project {
+.content .projects .project {
     height: auto;
     margin-right: 1em;
+
+    border-radius: 10px;
+
+    /* top bottom */
+    padding: 10px 15px;
+
+    font-size: 0.9em;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+
+    width: 100%;
+    max-width: 715px;
 }
 
-.content .project h3 {
+.content .projects .project .project-lang {
+    float: right;
+}
+
+.content .projects .project .project-lang span {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+}
+
+.content .projects .project .project-lang.python span {
+    background-color: #3572A5;
+}
+
+.content .projects .project .project-lang.javascript span {
+    background-color: #F1E05A;
+}
+
+.content .projects .project .project-lang.java span{
+    background-color: #B07219;
+}
+
+.content .projects .project a {
     font-weight: 900;
-    color: #2377BE;
-    transition-duration: 0.2s;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-.content .project img {
+.content .projects .project img {
     width: 256px;
     border-radius: 16px;
-}
-
-.content .project a:hover>h3 {
-    color: #548EBE;
 }
 
 /* Footer CSS */

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Content from './base/content';
 
 export default class Projects extends Component {
@@ -8,34 +7,33 @@ export default class Projects extends Component {
 		super(props)
 
 		this.state = {
-			data: null
+			projects: []
 		}
 	}
 
 	componentDidMount() {
 		fetch('/api/getAllProjects')
 			.then(response => response.json())
-			.then(data => this.setState({ data: data }))
+			.then(data => this.setState({ projects: data }))
 	}
 
 	render() {
 		return (
 			<Content className="content">
 				<h1><strong>Here's some stuff I've worked on.</strong></h1>
+				<p>This page pulls my public projects from Github. I also have some other projects that aren't listed on here!</p>
 				<div className="projects">
-					{
-						this.state.data === null ?
-							'nothing'
-							:
-							this.state.data.map((project, i) => {
-								return (
-									<div className="project" key={i}>
-										<h1>{project.name}</h1>
-									</div>
-								)
-							})
-
-					}
+					{this.state.projects.map((project, i) => {
+						return (
+							<div className="project" key={i}>
+								<a href={project.html_url}>
+									{project.name}
+								</a>
+								<p className={`project-lang ${project.language.toLowerCase()}`}>{project.language}<span /></p>
+								<p>{project.description}</p>
+							</div>
+						)
+					})}
 				</div>
 			</Content>
 		)
