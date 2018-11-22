@@ -1,15 +1,24 @@
 # ar-website
 This repository contains the source code for my personal website.
 
-### Installation
-#### Downloading and compiling the code  
+### Setup
+#### Cloning and Installation
 The repository has to be cloned and node packages need to first be installed.
 
 ``` bash
-$ git clone https://github.com/austinrovge/austin-website.git
-$ cd austin-website
+$ git clone https://github.com/austinrovge/ar-website.git
+$ cd ar-website
 $ npm install -g
 ```
+
+#### SQL Server
+MySQL will need to be installed on your machine to support storing projects.
+
+```bash
+$ npm run start-create-db
+```
+
+The NPM command will start the MySQL service and will create the database and table needed to store project information in.
 
 ### Server Environments
 #### Production
