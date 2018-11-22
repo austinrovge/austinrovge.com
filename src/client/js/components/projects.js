@@ -29,7 +29,7 @@ export default class Projects extends Component {
 								<a href={project.html_url}>
 									{project.name}
 								</a>
-								<p className={`project-lang ${project.language.toLowerCase()}`}>{project.language}<span /></p>
+								<p className={`project-lang ${project.language.toLowerCase().replace('#', 'sharp').replace('+', 'plus')}`}>{project.language}<span /></p>
 								<p>{project.description}</p>
 							</div>
 						)

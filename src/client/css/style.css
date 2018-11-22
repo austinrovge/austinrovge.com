@@ -144,8 +144,28 @@ a:hover {
     background-color: #F1E05A;
 }
 
-.content .projects .project .project-lang.java span{
+.content .projects .project .project-lang.java span {
     background-color: #B07219;
+}
+
+.content .projects .project .project-lang.css span {
+    background-color: #563D7C;
+}
+
+.content .projects .project .project-lang.c span {
+    background-color: #555555;
+}
+
+.content .projects .project .project-lang.html span {
+    background-color: #E34C26;
+}
+
+.content .projects .project .project-lang.cplusplus span {
+    background-color: #F34B7D;
+}
+
+.content .projects .project .project-lang.csharp span {
+    background-color: #178600;
 }
 
 .content .projects .project a {
