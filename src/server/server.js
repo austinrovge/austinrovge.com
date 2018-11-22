@@ -1,6 +1,6 @@
 import express from 'express'
 import routes from './routes'
-import { updateProjects } from './importProjects'
+import { updateProjects } from './controllers/projectController'
 
 const app = routes(express)
 let PORT = process.env.PORT || 8080

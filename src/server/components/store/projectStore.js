@@ -23,6 +23,16 @@ export const storeProject = projectData => {
 	})
 }
 
+export const deleteInvalidProjects = validProjectNames => {
+	Projects.destroy({
+		where: {
+			name: {
+				$notIn: validProjectNames
+			}
+		}
+	})
+}
+
 export const getAllProjects = () => {
 	return new Promise((resolve, reject) => {
 		Projects.findAll()

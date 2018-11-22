@@ -1,12 +1,12 @@
 import path from 'path'
-import projectController from './controllers/projectController'
+import { getProjects } from './controllers/projectController'
 
 export default express => {
 
 	const router = express.Router()
 
 	router.route('/getAllProjects').get(
-		projectController
+		getProjects
 	)
 
 	const app = express()
