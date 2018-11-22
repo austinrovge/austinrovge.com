@@ -103,28 +103,25 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 715px;
 }
 
 .content .projects .project {
     height: auto;
     margin-right: 1em;
-
     border-radius: 10px;
-
-    /* top bottom */
     padding: 10px 15px;
-
     font-size: 0.9em;
-
     background-color: rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
-
     width: 100%;
     max-width: 715px;
 }
 
 .content .projects .project .project-lang {
     float: right;
+    text-align: right;
 }
 
 .content .projects .project .project-lang span {

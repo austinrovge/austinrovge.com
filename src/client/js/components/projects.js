@@ -17,6 +17,20 @@ export default class Projects extends Component {
 			.then(data => this.setState({ projects: data }))
 	}
 
+	formatDate(date) {
+		let newDate = new Date(date)
+
+		const months = ["January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December"]
+
+		let month = newDate.getMonth()
+		let day = newDate.getDate()
+		day = day + (day > 0 ? ['th', 'st', 'nd', 'rd'][(day > 3 && day < 21) || day % 10 > 3 ? 0 : day % 10] : '')
+		let year = newDate.getFullYear();
+
+		return `${months[month]} ${day}, ${year}`
+	}
+
 	render() {
 		return (
 			<Content className="content">

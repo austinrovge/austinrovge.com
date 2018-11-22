@@ -11,13 +11,21 @@ export default databaseApi.define('projects', {
 		type: Sequelize.STRING(500),
 		field: 'description'
 	},
-	homepage: {
-		type: Sequelize.STRING(500),
-		field: 'homepage'
-	},
 	html_url: {
 		type: Sequelize.STRING(500),
 		field: 'html_url'
+	},
+	created_at: {
+		type: Sequelize.DATE,
+		field: 'created_at'
+	},
+	updated_at: {
+		type: Sequelize.DATE,
+		field: 'updated_at'
+	},
+	homepage: {
+		type: Sequelize.STRING(500),
+		field: 'homepage'
 	},
 	language: {
 		type: Sequelize.STRING(500),
