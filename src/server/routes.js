@@ -1,3 +1,4 @@
+import path from 'path'
 import projectController from './controllers/projectController'
 
 export default express => {
@@ -11,6 +12,14 @@ export default express => {
 	const app = express()
 	app.use('/api', router)
 	app.use(router)
+
+	app.use('/', express.static(__dirname))
+	app.use(express.static(path.join(__dirname, '/../client')))
+	app.use('/favicon.ico', express.static(path.join(__dirname, '/../client/assets/favicons/favicon.ico')))
+
+	app.get('*', (req, res) => {
+		res.sendFile(path.join(__dirname + '/../client/index.html'))
+	})
 
 	return app
 }
