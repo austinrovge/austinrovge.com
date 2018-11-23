@@ -39,9 +39,12 @@ $ npm run local
 ```
 
 ### Future Development
-* finish projects page
-* add content to photography page
-* fix react router ui flicker
-* add SASS without node-sass or affecting webpack compile times substantially
-* center all footer elements vertically/change dimensions
-* transitions?
+* ~~Dynamically update projects on project page~~
+* Dockerize project
+* Update text on pages
+* NGINX
+* Update look/position of items on pages
+* Add SASS without node-sass or affecting webpack compile times substantially
+* Audit packages and services used
+* Add content to photography page
+* Determine if transitions should be added
