@@ -19,6 +19,8 @@ export const storeProject = projectData => {
 						reject(error)
 					})
 			}
+		}).catch(error => {
+			reject(error)
 		})
 	})
 }

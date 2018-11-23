@@ -1,7 +1,7 @@
-import { scheduleJob } from 'node-schedule';
-import axios from 'axios';
+import { scheduleJob } from 'node-schedule'
+import axios from 'axios'
 import 'babel-polyfill'
-import { deleteInvalidProjects, getAllProjects, storeProject } from '../components/store/projectStore';
+import { deleteInvalidProjects, getAllProjects, storeProject } from '../components/store/projectStore'
 
 export const getProjects = async (req, res) => {
 
@@ -14,13 +14,15 @@ export const updateProjects = time => {
 	console.log('Projects updating at: ' + time)
 	axios.get('https://api.github.com/users/austinrovge/repos')
 		.then(results => {
-			let validProjectNames = results.data.map(project => project.name)
-
-			deleteInvalidProjects(validProjectNames)
+			let validProjectNames = []
 
 			results.data.forEach(project => {
 				storeProject(project)
+				validProjectNames.push(project.name)
 			})
+
+			deleteInvalidProjects(validProjectNames)
+
 		}).catch(error => {
 			console.log(error.response)
 		})
