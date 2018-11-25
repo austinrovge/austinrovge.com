@@ -11,7 +11,7 @@ export const getProjects = async (req, res) => {
 }
 
 export const updateProjects = time => {
-	console.log('Projects updating at: ' + time)
+	console.log(`Projects updating at: ${time}`)
 	axios.get('https://api.github.com/users/austinrovge/repos')
 		.then(results => {
 			let validProjectNames = []
