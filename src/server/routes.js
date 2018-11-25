@@ -13,7 +13,6 @@ export default express => {
 	app.use('/api', router)
 	app.use(router)
 
-	app.use('/', express.static(__dirname))
 	app.use(express.static(path.join(__dirname, '/../client')))
 	app.use('/favicon.ico', express.static(path.join(__dirname, '/../client/assets/favicons/favicon.ico')))
 

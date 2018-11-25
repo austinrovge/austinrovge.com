@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import GitHub from './social-media/github'
-import LinkedIn from './social-media/linkedin'
-import Email from './social-media/email'
-import Twitter from './social-media/twitter'
-import Instagram from './social-media/instagram'
+import GitHub from './icons/github'
+import LinkedIn from './icons/linkedin'
+import Email from './icons/email'
+import Instagram from './icons/instagram'
+import Spotify from './icons/spotify'
 
 export default class Footer extends Component {
 
@@ -13,8 +13,8 @@ export default class Footer extends Component {
 				<GitHub />
 				<LinkedIn />
 				<Email />
-				<Twitter />
 				<Instagram />
+				<Spotify />
 			</div>
 		)
 	}
