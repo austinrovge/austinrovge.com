@@ -177,6 +177,15 @@ a:hover {
     border-radius: 16px;
 }
 
+/* Photography */
+.content .photo {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0.5em;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
 /* Footer CSS */
 
 .footer {
