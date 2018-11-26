@@ -14,7 +14,7 @@ export default express => {
 	app.use(router)
 
 	app.use(express.static(path.join(__dirname, '/../client')))
-	app.use('/favicon.ico', express.static(path.join(__dirname, '/../client/assets/favicons/favicon.ico')))
+	app.use('/favicon.ico', express.static(path.join(__dirname, '/../client/assets/favicon.ico')))
 
 	app.get('*', (req, res) => {
 		res.sendFile(path.join(__dirname + '/../client/index.html'))
