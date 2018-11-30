@@ -179,16 +179,19 @@ a:hover {
 
 /* Photography */
 
-.content .photos .photo {
+.content .photos {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .content .photos .photo {
-    width: 100%;
+    width: 40%;
+    height: 40%;
     max-width: 500px;
     border-radius: 0.5em;
     margin-bottom: 15px;
+    margin-right: 15px;
 }
 
 /* Footer CSS */
